@@ -63,7 +63,7 @@
   --v2-text-xs:   0.75rem;
 
   /* Spacing */
-  --v2-section-py: clamp(40px, 5vw, 64px);
+  --v2-section-py: clamp(28px, 3.5vw, 44px);
   --v2-container-x: clamp(20px, 5vw, 48px);
   --v2-container-max: 1200px;
   --v2-gap-xs: 12px;
