@@ -52,10 +52,10 @@
   <link rel="apple-touch-icon" sizes="180x180" href="images/Logo_Carré_blanc_v1.png">
   <link rel="manifest" href="site.webmanifest">
 
-  <!-- Google Fonts — Fraunces (titres), Inter (texte), IBM Plex Mono (repères techniques), Sora (pages secondaires) -->
+  <!-- Google Fonts — Inter Tight (titres), Source Serif 4 (tuiles), Inter (texte), IBM Plex Mono (repères) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter+Tight:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400..600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="home.css">
 </head>
@@ -161,6 +161,7 @@
           </p>
           <div class="adc-hero__cta adc-anim" style="--d:.28s">
             <a href="https://outlook.office.com/book/ConsultationGratuite30Minutes@affairedechiffres.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="adc-btn " data-event="hero_cta_click"><span data-lang="fr">Réserver un appel de 30 minutes</span><span data-lang="en">Book a 30-minute call</span><svg class="adc-btn__arrow" viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg></a>
+            <a href="#services" class="adc-lien"><span data-lang="fr">Nos services</span><span data-lang="en">Our services</span></a>
             <p class="adc-cta-note"><span data-lang="fr">Sans frais · Sans engagement · Réponse en 24&nbsp;h ouvrables</span><span data-lang="en">No charge · No commitment · Reply within 24 business hours</span></p>
           </div>
           <p class="adc-hero__ordre adc-anim" style="--d:.36s">
@@ -171,6 +172,8 @@
 
         <!-- Visuel : le fondateur + le flux automatisé (l'humain et la technologie) -->
         <div class="adc-hero__visuel adc-anim" style="--d:.3s">
+          <span class="adc-hero__forme adc-hero__forme--1" aria-hidden="true"></span>
+          <span class="adc-hero__forme adc-hero__forme--2" aria-hidden="true"></span>
           <figure class="adc-portrait">
             <img src="images/Luc%20Pilon%20profile.jfif" alt="Luc Pilon, CPA, CA — Fondateur d'Affaire de Chiffres" width="400" height="400">
             <figcaption>
@@ -178,19 +181,6 @@
               <span data-lang="fr">Fondateur · plus de 20 ans d'expérience</span><span data-lang="en">Founder · 20+ years of experience</span>
             </figcaption>
           </figure>
-          <div class="adc-flux" role="img" aria-label="Illustration d'un flux comptable automatisé, révisé par un CPA">
-            <div class="adc-flux__entete">
-              <span class="adc-flux__titre"><span data-lang="fr">flux comptable</span><span data-lang="en">accounting flow</span></span>
-              <span class="adc-flux__etat"><span data-lang="fr">illustration</span><span data-lang="en">illustration</span></span>
-            </div>
-            <ol class="adc-flux__liste">
-              <li><span class="adc-flux__n">01</span><span class="adc-flux__l"><span data-lang="fr">Capture des pièces</span><span data-lang="en">Document capture</span></span><span class="adc-flux__o">Dext</span></li>
-              <li><span class="adc-flux__n">02</span><span class="adc-flux__l"><span data-lang="fr">Saisie et codification</span><span data-lang="en">Entry and coding</span></span><span class="adc-flux__o">QuickBooks · Xero</span></li>
-              <li><span class="adc-flux__n">03</span><span class="adc-flux__l"><span data-lang="fr">Conciliation bancaire</span><span data-lang="en">Bank reconciliation</span></span><span class="adc-flux__o"><span data-lang="fr">automatisée</span><span data-lang="en">automated</span></span></li>
-              <li><span class="adc-flux__n">04</span><span class="adc-flux__l"><span data-lang="fr">Rapports et tableaux de bord</span><span data-lang="en">Reports and dashboards</span></span><span class="adc-flux__o">KNIME</span></li>
-              <li class="adc-flux__humain"><span class="adc-flux__n">05</span><span class="adc-flux__l"><span data-lang="fr">Révision et conseil</span><span data-lang="en">Review and advice</span></span><span class="adc-flux__o"><span data-lang="fr">par un CPA</span><span data-lang="en">by a CPA</span></span></li>
-            </ol>
-          </div>
         </div>
       </div>
     </section>
@@ -231,57 +221,65 @@
           <h2 class="scroll-reveal"><span data-lang="fr">Familial par nature. <em>Technologique par conviction.</em></span><span data-lang="en">Family by nature. <em>Tech by conviction.</em></span></h2>
           <p class="adc-entete__intro scroll-reveal"><span data-lang="fr">Deux engagements qui vont de pair&nbsp;: la proximité d'un cabinet à taille humaine, et des processus comptables modernisés par l'automatisation.</span><span data-lang="en">Two commitments that go hand in hand: the closeness of a human-scale firm, and accounting processes modernized through automation.</span></p>
         </header>
-        <div class="adc-duo">
-          <article class="adc-pilier adc-pilier--famille scroll-reveal">
-            <p class="adc-pilier__label"><span data-lang="fr">Le cabinet familial</span><span data-lang="en">The family firm</span></p>
-            <h3><span data-lang="fr">Vous parlez aux personnes qui traitent votre dossier.</span><span data-lang="en">You speak with the people who handle your file.</span></h3>
-            <ul class="adc-pilier__liste">
-              <li>
-                <h4><span data-lang="fr">Un CPA, CA à la tête de votre dossier</span><span data-lang="en">A CPA, CA leading your file</span></h4>
-                <p><span data-lang="fr">Votre dossier est dirigé par Luc Pilon, CPA, CA, du début à la fin — plus de 20 ans d'expérience en finance corporative et en fiscalité.</span><span data-lang="en">Your file is led by Luc Pilon, CPA, CA, from start to finish — over 20 years of experience in corporate finance and tax.</span></p>
-              </li>
-              <li>
-                <h4><span data-lang="fr">Une réponse en 24&nbsp;h ouvrables</span><span data-lang="en">A reply within 24 business hours</span></h4>
-                <p><span data-lang="fr">Un engagement de délai de réponse inscrit au contrat de service.</span><span data-lang="en">A response-time commitment written into the service contract.</span></p>
-              </li>
-              <li>
-                <h4><span data-lang="fr">Bilingue, ancré au Québec</span><span data-lang="en">Bilingual, rooted in Quebec</span></h4>
-                <p><span data-lang="fr">Déclarations T2 et CO-17, TPS/TVQ, Loi&nbsp;25 et particularités fiscales québécoises, en français comme en anglais.</span><span data-lang="en">T2 and CO-17 filings, GST/QST, Law 25 and Quebec-specific tax rules, in French and in English.</span></p>
-              </li>
-              <li>
-                <h4><span data-lang="fr">Des honoraires clairs</span><span data-lang="en">Clear fees</span></h4>
-                <p><span data-lang="fr">Tarifs publiés, sans frais d'installation et sans engagement à long terme.</span><span data-lang="en">Published pricing, no setup fees and no long-term commitment.</span></p>
-              </li>
-            </ul>
-            <div class="adc-pilier__cta">
+        <div class="adc-bento">
+          <article class="adc-case adc-case--grand adc-case--famille scroll-reveal">
+            <p class="adc-case__label"><span data-lang="fr">Le cabinet familial</span><span data-lang="en">The family firm</span></p>
+            <h3><span data-lang="fr">Vous parlez aux personnes <em>qui traitent votre dossier.</em></span><span data-lang="en">You speak with the people <em>who handle your file.</em></span></h3>
+            <p><span data-lang="fr">Votre dossier est dirigé par Luc Pilon, CPA, CA, du début à la fin — plus de 20 ans d'expérience en finance corporative et en fiscalité.</span><span data-lang="en">Your file is led by Luc Pilon, CPA, CA, from start to finish — over 20 years of experience in corporate finance and tax.</span></p>
+            <div class="adc-case__pied">
               <a href="https://outlook.office.com/book/ConsultationGratuite30Minutes@affairedechiffres.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="adc-btn " data-event="approche_cta_click"><span data-lang="fr">Réserver un appel de 30 minutes</span><span data-lang="en">Book a 30-minute call</span><svg class="adc-btn__arrow" viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg></a>
               <p class="adc-cta-note"><span data-lang="fr">Sans frais · Sans engagement</span><span data-lang="en">No charge · No commitment</span></p>
             </div>
           </article>
-          <article class="adc-pilier adc-pilier--tech scroll-reveal">
-            <p class="adc-pilier__label"><span data-lang="fr">La technologie, sous toutes ses formes</span><span data-lang="en">Technology, in all its forms</span></p>
-            <h3><span data-lang="fr">Chaque tâche répétitive est confiée à un outil. Le jugement reste humain.</span><span data-lang="en">Every repetitive task goes to a tool. Judgment stays human.</span></h3>
-            <ul class="adc-pilier__liste">
-              <li>
-                <h4><span data-lang="fr">Capture et saisie automatisées</span><span data-lang="en">Automated capture and entry</span></h4>
-                <p><span data-lang="fr">Dext extrait les données de vos factures et reçus et les transmet à votre logiciel comptable — jusqu'à 80&nbsp;% de saisie manuelle en moins.</span><span data-lang="en">Dext extracts data from your invoices and receipts and sends it to your accounting software — up to 80% less manual entry.</span></p>
-              </li>
-              <li>
-                <h4><span data-lang="fr">Données et tableaux de bord</span><span data-lang="en">Data and dashboards</span></h4>
-                <p><span data-lang="fr">KNIME automatise les flux de données, relie vos sources d'information et produit des rapports financiers personnalisés.</span><span data-lang="en">KNIME automates data workflows, connects your information sources and produces custom financial reports.</span></p>
-              </li>
-              <li>
-                <h4><span data-lang="fr">Vos systèmes, intégrés</span><span data-lang="en">Your systems, integrated</span></h4>
-                <p><span data-lang="fr">QuickBooks, Xero, Acomba et Microsoft Dynamics 365&nbsp;: nous travaillons dans vos outils, ou nous implantons ceux qui conviennent.</span><span data-lang="en">QuickBooks, Xero, Acomba and Microsoft Dynamics 365: we work in your tools, or implement the right ones.</span></p>
-              </li>
-              <li>
-                <h4><span data-lang="fr">Dépenses et cartes d'entreprise</span><span data-lang="en">Spend and corporate cards</span></h4>
-                <p><span data-lang="fr">Ramp pour encadrer les dépenses et alimenter la comptabilité en continu.</span><span data-lang="en">Ramp to control spending and feed the books continuously.</span></p>
-              </li>
-            </ul>
-            <p class="adc-pilier__note"><span data-lang="fr">Les gains de temps réels dépendent de votre situation et sont évalués lors de la première rencontre.</span><span data-lang="en">Actual time savings depend on your situation and are assessed during the first meeting.</span></p>
+          <article class="adc-case adc-case--grand adc-case--tech scroll-reveal">
+            <p class="adc-case__label"><span data-lang="fr">La technologie, sous toutes ses formes</span><span data-lang="en">Technology, in all its forms</span></p>
+            <h3><span data-lang="fr">Chaque tâche répétitive est confiée à un outil. <em>Le jugement reste humain.</em></span><span data-lang="en">Every repetitive task goes to a tool. <em>Judgment stays human.</em></span></h3>
+            <div class="adc-flux" role="img" aria-label="Illustration d'un flux comptable automatisé, révisé par un CPA">
+            <div class="adc-flux__entete">
+              <span class="adc-flux__titre"><span data-lang="fr">flux comptable</span><span data-lang="en">accounting flow</span></span>
+              <span class="adc-flux__etat"><span data-lang="fr">illustration</span><span data-lang="en">illustration</span></span>
+            </div>
+            <ol class="adc-flux__liste">
+              <li><span class="adc-flux__n">01</span><span class="adc-flux__l"><span data-lang="fr">Capture des pièces</span><span data-lang="en">Document capture</span></span><span class="adc-flux__o">Dext</span></li>
+              <li><span class="adc-flux__n">02</span><span class="adc-flux__l"><span data-lang="fr">Saisie et codification</span><span data-lang="en">Entry and coding</span></span><span class="adc-flux__o">QuickBooks · Xero</span></li>
+              <li><span class="adc-flux__n">03</span><span class="adc-flux__l"><span data-lang="fr">Conciliation bancaire</span><span data-lang="en">Bank reconciliation</span></span><span class="adc-flux__o"><span data-lang="fr">automatisée</span><span data-lang="en">automated</span></span></li>
+              <li><span class="adc-flux__n">04</span><span class="adc-flux__l"><span data-lang="fr">Rapports et tableaux de bord</span><span data-lang="en">Reports and dashboards</span></span><span class="adc-flux__o">KNIME</span></li>
+              <li class="adc-flux__humain"><span class="adc-flux__n">05</span><span class="adc-flux__l"><span data-lang="fr">Révision et conseil</span><span data-lang="en">Review and advice</span></span><span class="adc-flux__o"><span data-lang="fr">par un CPA</span><span data-lang="en">by a CPA</span></span></li>
+            </ol>
+          </div>
+          </article>
+          <article class="adc-case adc-case--famille scroll-reveal">
+            <p class="adc-case__label"><span data-lang="fr">Famille</span><span data-lang="en">Family</span></p>
+            <h3><span data-lang="fr">Une réponse en 24&nbsp;h ouvrables</span><span data-lang="en">A reply within 24 business hours</span></h3>
+            <p><span data-lang="fr">Un engagement de délai de réponse inscrit au contrat de service.</span><span data-lang="en">A response-time commitment written into the service contract.</span></p>
+          </article>
+          <article class="adc-case adc-case--famille scroll-reveal">
+            <p class="adc-case__label"><span data-lang="fr">Famille</span><span data-lang="en">Family</span></p>
+            <h3><span data-lang="fr">Bilingue, ancré au Québec</span><span data-lang="en">Bilingual, rooted in Quebec</span></h3>
+            <p><span data-lang="fr">Déclarations T2 et CO-17, TPS/TVQ, Loi&nbsp;25 et particularités fiscales québécoises, en français comme en anglais.</span><span data-lang="en">T2 and CO-17 filings, GST/QST, Law 25 and Quebec-specific tax rules, in French and in English.</span></p>
+          </article>
+          <article class="adc-case adc-case--famille scroll-reveal">
+            <p class="adc-case__label"><span data-lang="fr">Famille</span><span data-lang="en">Family</span></p>
+            <h3><span data-lang="fr">Des honoraires clairs</span><span data-lang="en">Clear fees</span></h3>
+            <p><span data-lang="fr">Tarifs publiés, sans frais d'installation et sans engagement à long terme.</span><span data-lang="en">Published pricing, no setup fees and no long-term commitment.</span></p>
+          </article>
+          <article class="adc-case adc-case--tech scroll-reveal">
+            <p class="adc-case__label"><span data-lang="fr">Technologie</span><span data-lang="en">Technology</span></p>
+            <h3><span data-lang="fr">Capture et saisie automatisées</span><span data-lang="en">Automated capture and entry</span></h3>
+            <p><span data-lang="fr">Dext extrait les données de vos factures et reçus et les transmet à votre logiciel comptable — jusqu'à 80&nbsp;% de saisie manuelle en moins.</span><span data-lang="en">Dext extracts data from your invoices and receipts and sends it to your accounting software — up to 80% less manual entry.</span></p>
+          </article>
+          <article class="adc-case adc-case--tech scroll-reveal">
+            <p class="adc-case__label"><span data-lang="fr">Technologie</span><span data-lang="en">Technology</span></p>
+            <h3><span data-lang="fr">Données et tableaux de bord</span><span data-lang="en">Data and dashboards</span></h3>
+            <p><span data-lang="fr">KNIME automatise les flux de données, relie vos sources d'information et produit des rapports financiers personnalisés.</span><span data-lang="en">KNIME automates data workflows, connects your information sources and produces custom financial reports.</span></p>
+          </article>
+          <article class="adc-case adc-case--tech scroll-reveal">
+            <p class="adc-case__label"><span data-lang="fr">Technologie</span><span data-lang="en">Technology</span></p>
+            <h3><span data-lang="fr">Vos systèmes, intégrés</span><span data-lang="en">Your systems, integrated</span></h3>
+            <p><span data-lang="fr">QuickBooks, Xero, Acomba, Microsoft Dynamics 365 et Ramp&nbsp;: nous travaillons dans vos outils, ou nous implantons ceux qui conviennent.</span><span data-lang="en">QuickBooks, Xero, Acomba, Microsoft Dynamics 365 and Ramp: we work in your tools, or implement the right ones.</span></p>
           </article>
         </div>
+        <p class="adc-bento__note scroll-reveal"><span data-lang="fr">Les gains de temps réels dépendent de votre situation et sont évalués lors de la première rencontre.</span><span data-lang="en">Actual time savings depend on your situation and are assessed during the first meeting.</span></p>
       </div>
     </section>
 
