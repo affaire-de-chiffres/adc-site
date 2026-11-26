@@ -4,6 +4,26 @@ Build-by-build log of the SUPERPLAN execution. Newest entries on top.
 
 ---
 
+## 2026-11-26 — Session 6 : design v4 (inspiré de ramp.com, lechiffre.ca, pwc.com/ca)
+
+Demande : revoir le design en s'inspirant de trois sites de référence (consultés par captures, puis retirés de la liste réseau).
+
+### Ce qui est repris de chaque référence
+- **Ramp** : fond blanc, cartes gris clair en « bento », titres bicolores (noir + gris), accent unique réservé au CTA (l'ambre de la marque), boutons compacts (rayon 8 px), grille de logos à filets, rangée de faits.
+- **Le Chiffre** : hero gris doux à coins bas arrondis, portrait du fondateur en noir et blanc dans une arche, cercles au trait, lien secondaire souligné (« Nos services »).
+- **PwC** : titres de tuiles en serif sobre (Source Serif 4) pour Services, Processus et À propos, petits libellés gras, filets et angles nets.
+
+### Fichiers
+- **`home.css`** réécrit (jetons `--adc-*` : blanc / gris / encre / ambre ; Inter Tight pour les titres, Source Serif 4 pour les tuiles ; Fraunces retirée).
+- **`index.html`** : section Approche passée de deux piliers à une grille bento (2 grandes cases + 6 petites, mêmes textes) ; l'illustration « flux comptable » quitte le hero pour la case Technologie ; lien secondaire « Nos services » dans le hero ; formes géométriques derrière le portrait.
+- **`pages.css`** : sous-pages basculées sur les mêmes jetons (hero gris, titres grotesques bicolores, bouton compact).
+- Le texte ajouté en session 4 sur Ramp (« encadrer les dépenses… ») est retiré ; Ramp est simplement cité parmi les systèmes intégrés.
+
+### À noter
+- La photo du fondateur fait 400 × 400 px : suffisante à l'écran standard, un peu douce sur écran haute densité. Une photo plus grande (idéalement détourée) améliorerait le hero.
+
+---
+
 ## 2026-11-26 — Session 5 : sous-pages alignées sur le design v3
 
 - **`pages.css`** (nouveau) : habillage v3 pour `faq.html`, `articles.html`, `forfait-complet.html`, `devenir-affilie.html` — en-têtes papier avec titres Fraunces, repères mono, bouton ambre identique à l'accueil, cartes blanches/encre, carte du forfait Complet en « encre », bandeau CTA sombre au lieu de l'aplat orange.
