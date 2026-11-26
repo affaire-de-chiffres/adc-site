@@ -27,15 +27,16 @@
   <meta property="og:url" content="https://affairedechiffres.com/faq.html">
   <meta property="og:image" content="https://affairedechiffres.com/images/Bannière_Linked_In_ADC.png">
 
-  <meta name="theme-color" content="#1A1A1A">
+  <meta name="theme-color" content="#15140F">
 
   <link rel="icon" type="image/png" href="images/Logo_Carré_blanc_v1.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/Logo_Carré_blanc_v1.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="home.css">
 
   <style>
     /* ── FAQ sub-page hero ── */
@@ -77,6 +78,8 @@
       line-height: 1.55;
     }
   </style>
+  <!-- Design v3 : habillage commun des sous-pages (après les styles propres à la page) -->
+  <link rel="stylesheet" href="pages.css">
   <!-- Schema.org FAQPage — synchronise avec les questions visibles sur cette page -->
   <script type="application/ld+json">
 {
@@ -221,6 +224,9 @@
 
       <ul class="nav-links" id="nav-links" role="menubar">
         <li role="none">
+          <a href="index.html#approche" role="menuitem"><span data-lang="fr">Approche</span><span data-lang="en">Approach</span></a>
+        </li>
+        <li role="none">
           <a href="index.html#services" role="menuitem"><span data-lang="fr">Services</span><span data-lang="en">Services</span></a>
         </li>
         <li role="none">
@@ -229,15 +235,12 @@
         <li role="none">
           <a href="index.html#a-propos" role="menuitem"><span data-lang="fr">À propos</span><span data-lang="en">About</span></a>
         </li>
-        <li role="none">
-          <a href="index.html#contact" role="menuitem"><span data-lang="fr">Contact</span><span data-lang="en">Contact</span></a>
-        </li>
         <li role="none" class="nav-separateur" aria-hidden="true"></li>
         <li role="none" class="nav-item-externe">
           <a href="articles.html" role="menuitem"><span data-lang="fr">Articles</span><span data-lang="en">Articles</span></a>
         </li>
         <li role="none" class="nav-item-externe">
-          <a href="faq.html" role="menuitem" class="nav-lien-actif"><span data-lang="fr">FAQ</span><span data-lang="en">FAQ</span></a>
+          <a href="faq.html" role="menuitem" class="nav-lien-actif" aria-current="page"><span data-lang="fr">FAQ</span><span data-lang="en">FAQ</span></a>
         </li>
       </ul>
 
@@ -247,6 +250,9 @@
           <span class="langue-separateur">|</span>
           <button type="button" class="btn-langue" id="btn-en" data-langue="en" aria-label="Switch to English">EN</button>
         </div>
+        <a href="https://outlook.office.com/book/ConsultationGratuite30Minutes@affairedechiffres.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="adc-nav-cta" data-event="nav_cta_click">
+          <span data-lang="fr">Réserver un appel</span><span data-lang="en">Book a call</span>
+        </a>
         <button type="button" class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
           <span class="hamburger-barre"></span>
           <span class="hamburger-barre"></span>

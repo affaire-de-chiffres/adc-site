@@ -4,6 +4,16 @@ Build-by-build log of the SUPERPLAN execution. Newest entries on top.
 
 ---
 
+## 2026-11-26 — Session 5 : sous-pages alignées sur le design v3
+
+- **`pages.css`** (nouveau) : habillage v3 pour `faq.html`, `articles.html`, `forfait-complet.html`, `devenir-affilie.html` — en-têtes papier avec titres Fraunces, repères mono, bouton ambre identique à l'accueil, cartes blanches/encre, carte du forfait Complet en « encre », bandeau CTA sombre au lieu de l'aplat orange.
+- Ces pages chargent maintenant `styles.css` → `home.css` (jetons `--adc-*`, nav, pied de page) → `<style>` de la page → `pages.css`. Aucun contenu ni structure modifiés.
+- Navigation de FAQ et Articles : mêmes liens que l'accueil (Approche · Services · Forfaits · À propos | Articles · FAQ) + bouton « Réserver un appel ». Forfait Complet : bouton de nav vers `#lp-booking`. Devenir affilié : pas de bouton client (la page vise les affiliés).
+- Correctif : le sélecteur FR/EN de FAQ et Articles était invisible (classe `active` sans style).
+- Non touché : `admin-affilies.html` (outil interne), `plus-info.html` (redirection).
+
+---
+
 ## 2026-11-26 — Session 4 : refonte de la page d'accueil (design v3 — cabinet familial + technologie)
 
 Objectif : repositionner l'accueil pour une clientèle d'entreprise à mandat plus élevé, autour d'un seul message (cabinet familial qui embrasse la technologie) et d'un seul appel à l'action (réservation de 30 min).

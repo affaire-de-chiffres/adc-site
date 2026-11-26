@@ -33,15 +33,16 @@
   <meta name="twitter:description" content="Comptabilité complète pour PME : tenue de livres, déclarations fiscales, états financiers. Premier mois satisfait ou remboursé.">
   <meta name="twitter:image" content="https://affairedechiffres.com/images/Bannière_Linked_In_ADC.png">
 
-  <meta name="theme-color" content="#1A1A1A">
+  <meta name="theme-color" content="#15140F">
 
   <link rel="icon" type="image/png" href="images/Logo_Carré_blanc_v1.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/Logo_Carré_blanc_v1.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="home.css">
 
   <style>
     /* ── Landing page overrides ── */
@@ -520,6 +521,8 @@
       .lp-hero .lp-hero-anim { opacity: 1; transform: none; animation: none !important; }
     }
   </style>
+  <!-- Design v3 : habillage commun des sous-pages (après les styles propres à la page) -->
+  <link rel="stylesheet" href="pages.css">
 </head>
 <body>
 
@@ -537,6 +540,9 @@
           <span class="langue-separateur">|</span>
           <button type="button" class="btn-langue" id="btn-en" data-langue="en" aria-label="Switch to English">EN</button>
         </div>
+        <a href="#lp-booking" class="adc-nav-cta" data-event="nav_cta_click">
+          <span data-lang="fr">Réserver un appel</span><span data-lang="en">Book a call</span>
+        </a>
       </div>
     </nav>
   </header>
