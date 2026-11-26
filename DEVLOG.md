@@ -4,6 +4,27 @@ Build-by-build log of the SUPERPLAN execution. Newest entries on top.
 
 ---
 
+## 2026-11-26 — Session 4 : refonte de la page d'accueil (design v3 — cabinet familial + technologie)
+
+Objectif : repositionner l'accueil pour une clientèle d'entreprise à mandat plus élevé, autour d'un seul message (cabinet familial qui embrasse la technologie) et d'un seul appel à l'action (réservation de 30 min).
+
+### Ce qui change
+- **`index.html`** : `<main>` réécrit avec des classes `adc-*`. Sections : Hero → Bandeau preuves (faits + stack) → Approche (pilier familial / pilier technologique) → Services → Processus 90 jours → Forfaits (+ bandeau « Structure plus complexe ? ») → À propos → Contact.
+  - Sections « Ce que vous recherchez », « Pourquoi nous » et « Outils » fusionnées dans « Approche » (même contenu factuel, moins de défilement).
+  - **Un seul CTA** : tous les boutons mènent au calendrier Microsoft Bookings (`data-event` distincts : `nav_`, `hero_`, `approche_`, `services_`, `forfait_*`, `surmesure_`, `contact_booking_`, `sticky_cta_click`). Les CTA concurrents (« Voir le forfait », « Obtenir mon estimé », « En savoir plus ») sont retirés ; seul un lien texte vers `forfait-complet.html` subsiste.
+  - Navigation : Approche · Services · Forfaits · À propos | Articles · FAQ + bouton « Réserver un appel ».
+- **`home.css`** (nouveau, chargé seulement par l'accueil, après `styles.css`) : jetons `--adc-*`, Fraunces (titres) + Inter (texte) + IBM Plex Mono (repères techniques), fond papier / encre / ambre.
+- **`script.js`** : l'observateur du lien actif suit aussi `.adc-sec` ; meta descriptions et aria-labels mis à jour. Le « scroll snap » ne s'applique plus à l'accueil (il cible `.section`).
+
+### Non touché
+- `styles.css` (les autres pages gardent le design v2), contenu des forfaits et des tarifs, politique de confidentialité, balisage Schema.org, GA4.
+
+### À valider par le cabinet
+- Le qualificatif « cabinet familial » n'est appuyé à l'écran que par le profil du fondateur : ajouter les autres membres de la famille (nom, titre, photo) dans « À propos ».
+- Sous-pages (`faq`, `forfait-complet`, `articles`, `devenir-affilie`) à aligner sur le design v3 dans une étape ultérieure.
+
+---
+
 ## 2026-04-10 — Session 3: Ramp-inspired visual rework (design system v2)
 
 User asked for a heavy visual rework, section by section, taking inspiration for **boxes, flow and layout** from Ramp.com. No copy/structure loss — this is a pure design layer on top of the existing conversion-optimized markup.

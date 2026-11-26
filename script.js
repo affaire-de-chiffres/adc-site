@@ -32,8 +32,8 @@
 
   // Meta descriptions selon la langue
   var metaDescriptions = {
-    fr: 'Cabinet CPA à Montréal offrant des services de planification fiscale, intégration technologique et tenue de livres pour particuliers, travailleurs autonomes et PME. Fondé en 2017.',
-    en: 'Montréal-based CPA firm offering tax planning, technology integration and bookkeeping services for individuals, self-employed workers and SMBs. Founded in 2017.'
+    fr: 'Cabinet CPA familial à Montréal : tenue de livres, planification fiscale et intégration technologique pour PME et sociétés du Québec. Fondé en 2017.',
+    en: 'Family-run CPA firm in Montréal: bookkeeping, tax planning and technology integration for Quebec SMBs and corporations. Founded in 2017.'
   };
 
   // Meta keywords selon la langue
@@ -68,8 +68,8 @@
 
   // Aria-labels des sections selon la langue
   var ariaLabelsSections = {
-    fr: { accueil: 'Accueil', 'chiffres-cles': 'Chiffres clés', services: 'Services', outils: 'Outils', 'a-propos': 'À propos', contact: 'Contact' },
-    en: { accueil: 'Home', 'chiffres-cles': 'Key figures', services: 'Services', outils: 'Tools', 'a-propos': 'About', contact: 'Contact' }
+    fr: { accueil: 'Accueil', approche: 'Notre approche', roadmap: 'Notre processus en 90 jours', forfaits: 'Forfaits', 'chiffres-cles': 'Chiffres clés', services: 'Services', outils: 'Outils', 'a-propos': 'À propos', contact: 'Contact' },
+    en: { accueil: 'Home', approche: 'Our approach', roadmap: 'Our 90-day process', forfaits: 'Pricing', 'chiffres-cles': 'Key figures', services: 'Services', outils: 'Tools', 'a-propos': 'About', contact: 'Contact' }
   };
 
   // Aria-labels des liens de navigation selon la langue
@@ -336,7 +336,7 @@
      ------------------------------------------ */
 
   function initialiserObserverSections() {
-    var sections = document.querySelectorAll('.section');
+    var sections = document.querySelectorAll('.section, .adc-sec');
     var liensNav = document.querySelectorAll('.nav-links a');
 
     var options = {

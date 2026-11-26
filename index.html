@@ -17,7 +17,7 @@
   <title>Affaire de Chiffres | CPA Montréal — Fiscalité, Comptabilité</title>
 
   <!-- Meta SEO (mises à jour par script.js selon la langue) -->
-  <meta name="description" id="meta-description" content="Cabinet CPA à Montréal offrant des services de planification fiscale, intégration technologique et tenue de livres pour particuliers, travailleurs autonomes et PME. Fondé en 2017.">
+  <meta name="description" id="meta-description" content="Cabinet CPA familial à Montréal : tenue de livres, planification fiscale et intégration technologique pour PME et sociétés du Québec. Fondé en 2017.">
   <meta name="keywords" id="meta-keywords" content="CPA Montréal, comptable Montréal, fiscalité, tenue de livres, planification fiscale, intégration technologique, cabinet comptable Montérégie, Affaire de Chiffres">
   <meta name="robots" content="index, follow">
 
@@ -31,7 +31,7 @@
   <meta property="og:site_name" content="Affaire de Chiffres">
   <meta property="og:locale" id="og-locale" content="fr_CA">
   <meta property="og:title" id="og-title" content="Affaire de Chiffres | CPA Montréal — Fiscalité, Comptabilité">
-  <meta property="og:description" id="og-description" content="Cabinet CPA à Montréal offrant des services de planification fiscale, intégration technologique et tenue de livres pour particuliers, travailleurs autonomes et PME. Fondé en 2017.">
+  <meta property="og:description" id="og-description" content="Cabinet CPA familial à Montréal : tenue de livres, planification fiscale et intégration technologique pour PME et sociétés du Québec. Fondé en 2017.">
   <!-- DOMAINE : Remplacer l'URL ci-dessous par votre nom de domaine final -->
   <meta property="og:url" content="https://affairedechiffres.com/">
   <meta property="og:image" content="https://affairedechiffres.com/images/Bannière_Linked_In_ADC.png">
@@ -41,22 +41,23 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" id="tw-title" content="Affaire de Chiffres | CPA Montréal — Fiscalité, Comptabilité">
-  <meta name="twitter:description" id="tw-description" content="Cabinet CPA à Montréal offrant des services de planification fiscale, intégration technologique et tenue de livres pour particuliers, travailleurs autonomes et PME. Fondé en 2017.">
+  <meta name="twitter:description" id="tw-description" content="Cabinet CPA familial à Montréal : tenue de livres, planification fiscale et intégration technologique pour PME et sociétés du Québec. Fondé en 2017.">
   <meta name="twitter:image" content="https://affairedechiffres.com/images/Bannière_Linked_In_ADC.png">
 
   <!-- Thème mobile -->
-  <meta name="theme-color" content="#1A1A1A">
+  <meta name="theme-color" content="#15140F">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="images/Logo_Carré_blanc_v1.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/Logo_Carré_blanc_v1.png">
   <link rel="manifest" href="site.webmanifest">
 
-  <!-- Google Fonts — Inter (body) + Sora (display headings) -->
+  <!-- Google Fonts — Fraunces (titres), Inter (texte), IBM Plex Mono (repères techniques), Sora (pages secondaires) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="home.css">
 </head>
 <body>
 
@@ -80,6 +81,11 @@
       <!-- Liens de navigation au centre (menu mobile en overlay sur petits écrans) -->
       <ul class="nav-links" id="nav-links" role="menubar">
         <li role="none">
+          <a href="#approche" role="menuitem" aria-label="Approche">
+            <span data-lang="fr">Approche</span><span data-lang="en">Approach</span>
+          </a>
+        </li>
+        <li role="none">
           <a href="#services" role="menuitem" aria-label="Services">
             <span data-lang="fr">Services</span><span data-lang="en">Services</span>
           </a>
@@ -90,18 +96,8 @@
           </a>
         </li>
         <li role="none">
-          <a href="#pourquoi-nous" role="menuitem" aria-label="Pourquoi nous">
-            <span data-lang="fr">Pourquoi nous</span><span data-lang="en">Why us</span>
-          </a>
-        </li>
-        <li role="none">
           <a href="#a-propos" role="menuitem" aria-label="À propos">
             <span data-lang="fr">À propos</span><span data-lang="en">About</span>
-          </a>
-        </li>
-        <li role="none">
-          <a href="#contact" role="menuitem" aria-label="Contact">
-            <span data-lang="fr">Contact</span><span data-lang="en">Contact</span>
           </a>
         </li>
         <li role="none" class="nav-separateur" aria-hidden="true"></li>
@@ -127,6 +123,11 @@
           <button type="button" class="btn-langue" id="btn-en" data-langue="en" aria-label="Switch to English">EN</button>
         </div>
 
+        <!-- CTA unique, toujours visible dans la navigation -->
+        <a href="https://outlook.office.com/book/ConsultationGratuite30Minutes@affairedechiffres.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="adc-nav-cta" data-event="nav_cta_click">
+          <span data-lang="fr">Réserver un appel</span><span data-lang="en">Book a call</span>
+        </a>
+
         <!-- Bouton hamburger (visible uniquement sur mobile) -->
         <button type="button" class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
           <span class="hamburger-barre"></span>
@@ -142,959 +143,382 @@
   <!-- ============================================
        CONTENU PRINCIPAL
        ============================================ -->
-  <main id="contenu-principal" role="main">
+  <main id="contenu-principal" role="main" class="adc">
 
-    <!-- Section Accueil — Hero plein écran -->
-    <section id="accueil" class="section section-accueil" aria-label="Accueil">
-
-      <!-- SVG réseau/nodes en arrière-plan -->
-      <svg class="hero-network-bg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-        <g class="hero-network-group">
-          <!-- Nodes -->
-          <circle cx="150" cy="120" r="3" fill="#E8943A"/>
-          <circle cx="350" cy="250" r="2.5" fill="#F5C16C"/>
-          <circle cx="550" cy="100" r="3.5" fill="#E8943A"/>
-          <circle cx="750" cy="300" r="2" fill="#F5C16C"/>
-          <circle cx="950" cy="150" r="3" fill="#E8943A"/>
-          <circle cx="1050" cy="400" r="2.5" fill="#F5C16C"/>
-          <circle cx="250" cy="500" r="2" fill="#E8943A"/>
-          <circle cx="500" cy="600" r="3" fill="#F5C16C"/>
-          <circle cx="800" cy="550" r="2.5" fill="#E8943A"/>
-          <circle cx="1100" cy="650" r="2" fill="#F5C16C"/>
-          <circle cx="100" cy="700" r="3" fill="#E8943A"/>
-          <circle cx="650" cy="400" r="2" fill="#F5C16C"/>
-          <!-- Connections -->
-          <line x1="150" y1="120" x2="350" y2="250" stroke="#E8943A" stroke-width="0.5"/>
-          <line x1="350" y1="250" x2="550" y2="100" stroke="#F5C16C" stroke-width="0.4"/>
-          <line x1="550" y1="100" x2="750" y2="300" stroke="#E8943A" stroke-width="0.5"/>
-          <line x1="750" y1="300" x2="950" y2="150" stroke="#F5C16C" stroke-width="0.4"/>
-          <line x1="950" y1="150" x2="1050" y2="400" stroke="#E8943A" stroke-width="0.5"/>
-          <line x1="250" y1="500" x2="500" y2="600" stroke="#F5C16C" stroke-width="0.4"/>
-          <line x1="500" y1="600" x2="800" y2="550" stroke="#E8943A" stroke-width="0.5"/>
-          <line x1="800" y1="550" x2="1100" y2="650" stroke="#F5C16C" stroke-width="0.4"/>
-          <line x1="100" y1="700" x2="250" y2="500" stroke="#E8943A" stroke-width="0.5"/>
-          <line x1="350" y1="250" x2="650" y2="400" stroke="#F5C16C" stroke-width="0.4"/>
-          <line x1="650" y1="400" x2="750" y2="300" stroke="#E8943A" stroke-width="0.5"/>
-          <line x1="650" y1="400" x2="800" y2="550" stroke="#F5C16C" stroke-width="0.4"/>
-          <line x1="1050" y1="400" x2="1100" y2="650" stroke="#E8943A" stroke-width="0.5"/>
-          <line x1="150" y1="120" x2="550" y2="100" stroke="#F5C16C" stroke-width="0.3"/>
-        </g>
-      </svg>
-
-      <div class="section-contenu hero-contenu">
-
-        <!-- Colonne gauche — Accroche + CTA -->
-        <div class="hero-accroche">
-          <span class="eyebrow hero-anim" style="animation-delay: 0.1s;">
-            <span data-lang="fr">Cabinet CPA · Montréal</span>
-            <span data-lang="en">CPA Firm · Montréal</span>
-          </span>
-
+    <!-- ============================================
+         HERO — Cabinet familial + technologie, un seul CTA
+         ============================================ -->
+    <section id="accueil" class="adc-sec adc-hero" aria-label="Accueil">
+      <div class="adc-wrap adc-hero__grille">
+        <div class="adc-hero__texte">
+          <p class="adc-eyebrow adc-anim" style="--d:.05s"><span class="adc-eyebrow__dot" aria-hidden="true"></span><span data-lang="fr">Cabinet CPA familial · Montréal · Depuis 2017</span><span data-lang="en">Family-run CPA firm · Montréal · Since 2017</span></p>
           <!-- Titre principal (h1 unique pour le SEO) -->
-          <h1 class="hero-titre hero-anim" style="animation-delay: 0.2s;">
-            <span data-lang="fr">Votre comptabilité, <strong>simplifiée</strong>. Pour vous concentrer sur votre <strong>croissance</strong>.</span>
-            <span data-lang="en">Your accounting, <strong>simplified</strong>. So you can focus on <strong>growth</strong>.</span>
+          <h1 class="adc-hero__titre adc-anim" style="--d:.12s">
+            <span data-lang="fr">L'attention d'un cabinet familial. <em>La puissance de la technologie.</em></span><span data-lang="en">The care of a family firm. <em>The power of technology.</em></span>
           </h1>
-
-          <!-- Sous-titre -->
-          <p class="hero-sous-titre hero-anim" style="animation-delay: 0.4s;">
-            <span data-lang="fr">Cabinet CPA boutique à Montréal. Un service <strong>personnalisé et tout-inclus</strong> mené par un CPA, CA senior : tenue de livres, déclarations d'impôt et TPS/TVQ, états financiers et accompagnement technologique. Premier mois satisfait ou remboursé.</span>
-            <span data-lang="en">Boutique CPA firm in Montréal. A <strong>personalized, all-inclusive</strong> service led by a senior CPA, CA: bookkeeping, tax returns and GST/QST, financial statements and technology support. First month money-back guarantee.</span>
+          <p class="adc-hero__sous-titre adc-anim" style="--d:.2s">
+            <span data-lang="fr">Comptabilité, fiscalité et intégration technologique pour les PME et sociétés du Québec. Votre dossier est dirigé par un CPA, CA&nbsp;; la saisie, les conciliations et les rapports sont automatisés partout où c'est possible.</span><span data-lang="en">Accounting, tax and technology integration for Quebec SMBs and corporations. Your file is led by a CPA, CA; data entry, reconciliations and reporting are automated wherever possible.</span>
           </p>
-
-          <!-- Boutons d'action — CTA principal = réservation 30 min, secondaire = forfait complet -->
-          <div class="hero-boutons hero-anim" style="animation-delay: 0.6s;">
-            <a href="https://outlook.office.com/book/ConsultationGratuite30Minutes@affairedechiffres.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="btn btn-primaire" data-event="hero_cta_click">
-              <span data-lang="fr">Réserver 30 min sans frais</span>
-              <span data-lang="en">Book a 30 min call at no charge</span>
-            </a>
-            <a href="forfait-complet.html" class="btn btn-secondaire" data-event="hero_forfait_click">
-              <span data-lang="fr">Voir le forfait Complet →</span>
-              <span data-lang="en">See the Complete plan →</span>
-            </a>
+          <div class="adc-hero__cta adc-anim" style="--d:.28s">
+            <a href="https://outlook.office.com/book/ConsultationGratuite30Minutes@affairedechiffres.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="adc-btn " data-event="hero_cta_click"><span data-lang="fr">Réserver un appel de 30 minutes</span><span data-lang="en">Book a 30-minute call</span><svg class="adc-btn__arrow" viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg></a>
+            <p class="adc-cta-note"><span data-lang="fr">Sans frais · Sans engagement · Réponse en 24&nbsp;h ouvrables</span><span data-lang="en">No charge · No commitment · Reply within 24 business hours</span></p>
           </div>
+          <p class="adc-hero__ordre adc-anim" style="--d:.36s">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.700-7-5.500-7-10V6l7-3z"/><path d="M9 12l2.200 2.200L15.200 10"/></svg>
+            <span data-lang="fr">Membre en règle de l'Ordre des CPA du Québec</span><span data-lang="en">Member in good standing of the Ordre des CPA du Québec</span>
+          </p>
         </div>
 
-        <!-- Colonne droite — Stat card + logo wall -->
-        <aside class="hero-aside hero-anim" style="animation-delay: 0.8s;" aria-label="À propos du cabinet">
-          <div class="hero-stat-card">
-            <span class="eyebrow">
-              <span data-lang="fr">Notre engagement</span>
-              <span data-lang="en">Our commitment</span>
-            </span>
-            <p class="hero-stat-card__number"><em>24</em> <span data-lang="fr">h</span><span data-lang="en">h</span></p>
-            <p class="hero-stat-card__label">
-              <span data-lang="fr">Délai de réponse maximal en jours ouvrables, garanti par contrat. Un cabinet boutique spécialisé, tech first — vous parlez directement à notre équipe CPA.</span>
-              <span data-lang="en">Maximum response time on business days, contractually guaranteed. A specialized, tech-first boutique firm — you speak directly with our CPA team.</span>
-            </p>
+        <!-- Visuel : le fondateur + le flux automatisé (l'humain et la technologie) -->
+        <div class="adc-hero__visuel adc-anim" style="--d:.3s">
+          <figure class="adc-portrait">
+            <img src="images/Luc%20Pilon%20profile.jfif" alt="Luc Pilon, CPA, CA — Fondateur d'Affaire de Chiffres" width="400" height="400">
+            <figcaption>
+              <strong>Luc Pilon, CPA, CA</strong>
+              <span data-lang="fr">Fondateur · plus de 20 ans d'expérience</span><span data-lang="en">Founder · 20+ years of experience</span>
+            </figcaption>
+          </figure>
+          <div class="adc-flux" role="img" aria-label="Illustration d'un flux comptable automatisé, révisé par un CPA">
+            <div class="adc-flux__entete">
+              <span class="adc-flux__titre"><span data-lang="fr">flux comptable</span><span data-lang="en">accounting flow</span></span>
+              <span class="adc-flux__etat"><span data-lang="fr">illustration</span><span data-lang="en">illustration</span></span>
+            </div>
+            <ol class="adc-flux__liste">
+              <li><span class="adc-flux__n">01</span><span class="adc-flux__l"><span data-lang="fr">Capture des pièces</span><span data-lang="en">Document capture</span></span><span class="adc-flux__o">Dext</span></li>
+              <li><span class="adc-flux__n">02</span><span class="adc-flux__l"><span data-lang="fr">Saisie et codification</span><span data-lang="en">Entry and coding</span></span><span class="adc-flux__o">QuickBooks · Xero</span></li>
+              <li><span class="adc-flux__n">03</span><span class="adc-flux__l"><span data-lang="fr">Conciliation bancaire</span><span data-lang="en">Bank reconciliation</span></span><span class="adc-flux__o"><span data-lang="fr">automatisée</span><span data-lang="en">automated</span></span></li>
+              <li><span class="adc-flux__n">04</span><span class="adc-flux__l"><span data-lang="fr">Rapports et tableaux de bord</span><span data-lang="en">Reports and dashboards</span></span><span class="adc-flux__o">KNIME</span></li>
+              <li class="adc-flux__humain"><span class="adc-flux__n">05</span><span class="adc-flux__l"><span data-lang="fr">Révision et conseil</span><span data-lang="en">Review and advice</span></span><span class="adc-flux__o"><span data-lang="fr">par un CPA</span><span data-lang="en">by a CPA</span></span></li>
+            </ol>
           </div>
-
-          <div class="hero-outils-wall">
-            <p class="outils-surtitre">
-              <span data-lang="fr">Le stack technologique que nous maîtrisons</span>
-              <span data-lang="en">The tech stack we master</span>
-            </p>
-            <div class="carrousel-wrapper">
-              <div class="carrousel-piste">
-                <div class="carrousel-logo"><img src="images/Carrousel/Dext-greyscale.png" alt="Dext" loading="lazy"></div>
-                <div class="carrousel-logo"><img src="images/Carrousel/KNIME-greyscale.png" alt="KNIME" loading="lazy"></div>
-                <div class="carrousel-logo"><img src="images/Carrousel/Xero-greyscale.png" alt="Xero" loading="lazy"></div>
-                <div class="carrousel-logo"><img src="images/Carrousel/QuickBooks-greyscale.png" alt="QuickBooks" loading="lazy"></div>
-                <div class="carrousel-logo"><img src="images/Carrousel/Microsoft%20Dynamics%20365-greyscale.png" alt="Microsoft Dynamics 365" loading="lazy"></div>
-                <div class="carrousel-logo"><img src="images/Carrousel/Acomba-greyscale.png" alt="Acomba" loading="lazy"></div>
-                <div class="carrousel-logo"><img src="images/Carrousel/Ramp-greyscale.png" alt="Ramp" loading="lazy"></div>
-                <!-- Doublés pour boucle infinie -->
-                <div class="carrousel-logo" aria-hidden="true"><img src="images/Carrousel/Dext-greyscale.png" alt="" loading="lazy"></div>
-                <div class="carrousel-logo" aria-hidden="true"><img src="images/Carrousel/KNIME-greyscale.png" alt="" loading="lazy"></div>
-                <div class="carrousel-logo" aria-hidden="true"><img src="images/Carrousel/Xero-greyscale.png" alt="" loading="lazy"></div>
-                <div class="carrousel-logo" aria-hidden="true"><img src="images/Carrousel/QuickBooks-greyscale.png" alt="" loading="lazy"></div>
-                <div class="carrousel-logo" aria-hidden="true"><img src="images/Carrousel/Microsoft%20Dynamics%20365-greyscale.png" alt="" loading="lazy"></div>
-                <div class="carrousel-logo" aria-hidden="true"><img src="images/Carrousel/Acomba-greyscale.png" alt="" loading="lazy"></div>
-                <div class="carrousel-logo" aria-hidden="true"><img src="images/Carrousel/Ramp-greyscale.png" alt="" loading="lazy"></div>
-              </div>
-            </div>
-          </div>
-        </aside>
-
-      </div>
-
-      <!-- Indicateur de scroll (chevron animé) -->
-      <a href="#defi" class="hero-scroll-indicateur" aria-label="Défiler vers la section suivante">
-        <span class="hero-chevron"></span>
-      </a>
-
-    </section>
-
-
-    <!-- ============================================
-         BANDEAU « CE QUE VOUS RECHERCHEZ » — Besoins clients
-         ============================================ -->
-    <section id="defi" class="section section-defi" aria-label="Ce que vous recherchez chez un comptable">
-      <div class="section-contenu defi-contenu">
-        <span class="eyebrow scroll-reveal">
-          <span data-lang="fr">Ce que vous recherchez</span>
-          <span data-lang="en">What you're looking for</span>
-        </span>
-        <h2 class="scroll-reveal">
-          <span data-lang="fr">Trois besoins essentiels pour un propriétaire de PME.</span>
-          <span data-lang="en">Three essential needs for an SMB owner.</span>
-        </h2>
-
-        <div class="defi-grille">
-          <article class="defi-carte scroll-reveal">
-            <span class="defi-numero" aria-hidden="true">01</span>
-            <h3 class="defi-titre">
-              <span data-lang="fr">Du temps pour votre entreprise</span>
-              <span data-lang="en">Time for your business</span>
-            </h3>
-            <p class="defi-texte">
-              <span data-lang="fr">Concentrez-vous sur la croissance de votre entreprise pendant qu'on prend en charge la saisie, les conciliations bancaires et les rapports périodiques grâce à l'automatisation Dext.</span>
-              <span data-lang="en">Focus on growing your business while we handle data entry, bank reconciliations and periodic reporting through Dext automation.</span>
-            </p>
-          </article>
-
-          <article class="defi-carte scroll-reveal">
-            <span class="defi-numero" aria-hidden="true">02</span>
-            <h3 class="defi-titre">
-              <span data-lang="fr">Un cabinet boutique spécialisé</span>
-              <span data-lang="en">A specialized boutique firm</span>
-            </h3>
-            <p class="defi-texte">
-              <span data-lang="fr">Un cabinet tech first à taille humaine : vous parlez directement à l'équipe CPA qui traite votre dossier. Réponse garantie en moins de 24 h ouvrables — engagement contractuel.</span>
-              <span data-lang="en">A tech-first firm on a human scale: you speak directly with the CPA team handling your file. Guaranteed response within 24 business hours — contractual commitment.</span>
-            </p>
-          </article>
-
-          <article class="defi-carte scroll-reveal">
-            <span class="defi-numero" aria-hidden="true">03</span>
-            <h3 class="defi-titre">
-              <span data-lang="fr">De la clarté sur les coûts</span>
-              <span data-lang="en">Clarity on costs</span>
-            </h3>
-            <p class="defi-texte">
-              <span data-lang="fr">Forfaits mensuels publiés, sans frais d'installation, sans engagement long terme. Les frais de logiciels tiers vous sont refacturés au coût exact, sans mark-up.</span>
-              <span data-lang="en">Published monthly plans, no setup fees, no long-term commitment. Third-party software fees passed through at exact cost, with zero mark-up.</span>
-            </p>
-          </article>
-        </div>
-
-        <p class="defi-transition scroll-reveal">
-          <span data-lang="fr">Voici comment notre approche y répond. <a href="#services">Découvrez nos services →</a></span>
-          <span data-lang="en">Here's how our approach delivers on these. <a href="#services">Discover our services →</a></span>
-        </p>
-      </div>
-    </section>
-
-    <!-- Section Services — fond crème -->
-    <section id="services" class="section section-services" aria-label="Services">
-      <div class="section-contenu services-contenu">
-
-        <!-- En-tête de section -->
-        <span class="eyebrow scroll-reveal">
-          <span data-lang="fr">Services</span>
-          <span data-lang="en">Services</span>
-        </span>
-        <h2 class="scroll-reveal">
-          <span data-lang="fr">Trois expertises pour reprendre le contrôle de vos chiffres.</span>
-          <span data-lang="en">Three expertises to take back control of your numbers.</span>
-        </h2>
-        <p class="services-sous-titre scroll-reveal">
-          <span data-lang="fr">De la planification fiscale à l'automatisation comptable, nous livrons des solutions mesurables — pas du jargon.</span>
-          <span data-lang="en">From tax planning to accounting automation, we deliver measurable outcomes — not jargon.</span>
-        </p>
-
-        <!-- Grille des 3 cartes de services -->
-        <div class="services-grille">
-
-          <!-- Carte 1 — Tenue de livres et comptabilité (service vedette) -->
-          <article class="carte-service carte-service-vedette scroll-reveal">
-            <div class="carte-badge-vedette">
-              <span data-lang="fr">Notre service phare</span>
-              <span data-lang="en">Our flagship service</span>
-            </div>
-            <h3 class="carte-titre">
-              <span data-lang="fr">Tenue de livres et comptabilité</span>
-              <span data-lang="en">Bookkeeping &amp; accounting</span>
-            </h3>
-            <p class="carte-description">
-              <span data-lang="fr">Prise en charge complète ou partielle de votre comptabilité : saisie des transactions, conciliations bancaires, production d'états financiers et rapports périodiques.</span>
-              <span data-lang="en">Full or partial management of your bookkeeping: transaction entry, bank reconciliations, financial statement preparation and periodic reporting.</span>
-            </p>
-            <ul class="carte-cas-usage">
-              <li>
-                <span data-lang="fr">Conciliation bancaire automatisée</span>
-                <span data-lang="en">Automated bank reconciliation</span>
-              </li>
-              <li>
-                <span data-lang="fr">États financiers mensuels</span>
-                <span data-lang="en">Monthly financial statements</span>
-              </li>
-              <li>
-                <span data-lang="fr">Gestion des comptes fournisseurs et clients</span>
-                <span data-lang="en">Accounts payable and receivable management</span>
-              </li>
-            </ul>
-            <div class="carte-tarif">
-              <p class="tarif-a-partir">
-                <span data-lang="fr">À partir de <strong>450&nbsp;$</strong> <span class="tarif-suffixe">/ mois</span></span>
-                <span data-lang="en">From <strong>$450</strong> <span class="tarif-suffixe">/ month</span></span>
-              </p>
-              <p class="tarif-detail">
-                <span data-lang="fr">3 forfaits mensuels · sans engagement</span>
-                <span data-lang="en">3 monthly plans · no commitment</span>
-              </p>
-            </div>
-            <a href="#forfaits" class="btn btn-primaire btn-carte-vedette">
-              <span data-lang="fr">Voir les forfaits</span>
-              <span data-lang="en">View packages</span>
-            </a>
-          </article>
-
-          <!-- Carte 2 — Planification fiscale -->
-          <article class="carte-service scroll-reveal">
-            <h3 class="carte-titre">
-              <span data-lang="fr">Planification fiscale</span>
-              <span data-lang="en">Tax planning</span>
-            </h3>
-            <p class="carte-description">
-              <span data-lang="fr">Nous accompagnons les particuliers et les entreprises dans l'optimisation de leur situation fiscale, en conformité avec les lois et règlements en vigueur.</span>
-              <span data-lang="en">We help individuals and businesses optimize their tax situation in compliance with applicable laws and regulations.</span>
-            </p>
-            <ul class="carte-cas-usage">
-              <li>
-                <span data-lang="fr">Optimisation de la rémunération mixte (salaire/dividendes)</span>
-                <span data-lang="en">Mixed compensation optimization (salary/dividends)</span>
-              </li>
-              <li>
-                <span data-lang="fr">Planification de fin d'année fiscale</span>
-                <span data-lang="en">Year-end tax planning</span>
-              </li>
-              <li>
-                <span data-lang="fr">Réorganisation corporative</span>
-                <span data-lang="en">Corporate reorganization</span>
-              </li>
-            </ul>
-            <div class="carte-tarif">
-              <p class="tarif-a-partir">
-                <span data-lang="fr"><strong>350&nbsp;$</strong> <span class="tarif-suffixe">/ heure</span></span>
-                <span data-lang="en"><strong>$350</strong> <span class="tarif-suffixe">/ hour</span></span>
-              </p>
-              <p class="tarif-detail">
-                <span data-lang="fr">Mandat ponctuel ou forfait annuel · Soumission gratuite en 24 h</span>
-                <span data-lang="en">One-time engagement or annual plan · Free 24h quote</span>
-              </p>
-            </div>
-            <a href="#contact?service=fiscalite" class="btn btn-carte-outline">
-              <span data-lang="fr">Obtenir mon estimé gratuit</span>
-              <span data-lang="en">Get my free estimate</span>
-            </a>
-          </article>
-
-          <!-- Carte 3 — Intégration technologique -->
-          <article class="carte-service scroll-reveal">
-            <h3 class="carte-titre">
-              <span data-lang="fr">Intégration technologique</span>
-              <span data-lang="en">Technology integration</span>
-            </h3>
-            <p class="carte-description">
-              <span data-lang="fr">Nous aidons nos clients à sélectionner et à implanter des outils technologiques pour moderniser leurs processus comptables et financiers.</span>
-              <span data-lang="en">We help our clients select and implement technology solutions to modernize their accounting and financial processes.</span>
-            </p>
-            <ul class="carte-cas-usage">
-              <li>
-                <span data-lang="fr">Implantation Dext et QuickBooks</span>
-                <span data-lang="en">Dext and QuickBooks implementation</span>
-              </li>
-              <li>
-                <span data-lang="fr">Automatisation de la saisie de factures</span>
-                <span data-lang="en">Invoice entry automation</span>
-              </li>
-              <li>
-                <span data-lang="fr">Tableaux de bord financiers avec KNIME</span>
-                <span data-lang="en">Financial dashboards with KNIME</span>
-              </li>
-            </ul>
-            <div class="carte-tarif">
-              <p class="tarif-a-partir">
-                <span data-lang="fr"><strong>250&nbsp;$</strong> <span class="tarif-suffixe">/ heure</span> <span class="tarif-suffixe">(hors forfait)</span></span>
-                <span data-lang="en"><strong>$250</strong> <span class="tarif-suffixe">/ hour</span> <span class="tarif-suffixe">(standalone)</span></span>
-              </p>
-              <p class="tarif-detail">
-                <span data-lang="fr">Inclus sans frais additionnels dans les forfaits Complet et Premium</span>
-                <span data-lang="en">Included at no extra cost in the Complete and Premium packages</span>
-              </p>
-            </div>
-            <a href="#contact?service=technologie" class="btn btn-carte-outline">
-              <span data-lang="fr">Obtenir mon estimé gratuit</span>
-              <span data-lang="en">Get my free estimate</span>
-            </a>
-          </article>
-
-        </div><!-- /.services-grille -->
-
-      </div>
-    </section>
-
-    <!-- ============================================
-         SECTION POURQUOI NOUS — 4 différenciateurs
-         ============================================ -->
-    <section id="pourquoi-nous" class="section section-pourquoi v2-dark" aria-label="Pourquoi nous choisir">
-      <div class="section-contenu pourquoi-contenu">
-        <span class="eyebrow scroll-reveal">
-          <span data-lang="fr">Pourquoi nous</span>
-          <span data-lang="en">Why us</span>
-        </span>
-        <h2 class="scroll-reveal">
-          <span data-lang="fr">Un cabinet boutique dédié à chaque client.</span>
-          <span data-lang="en">A boutique firm dedicated to every client.</span>
-        </h2>
-        <p class="pourquoi-sous-titre scroll-reveal">
-          <span data-lang="fr">Quatre caractéristiques concrètes de notre approche, à valider lors d'une rencontre sans frais.</span>
-          <span data-lang="en">Four concrete features of our approach, to be confirmed during a no-charge meeting.</span>
-        </p>
-
-        <div class="pourquoi-grille">
-
-          <article class="pourquoi-carte scroll-reveal">
-            <div class="pourquoi-icone" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="32" height="32"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 11l-3-3m0 0l-3 3m3-3v8"/></svg>
-            </div>
-            <h3 class="pourquoi-titre">
-              <span data-lang="fr">Mené par un CPA senior</span>
-              <span data-lang="en">Led by a senior CPA</span>
-            </h3>
-            <p class="pourquoi-texte">
-              <span data-lang="fr">Votre dossier est dirigé par Luc Pilon, CPA, CA, du début à la fin. Plus de 20 ans d'expérience en finance corporative et fiscalité.</span>
-              <span data-lang="en">Your file is led by Luc Pilon, CPA, CA, from start to finish. Over 20 years of experience in corporate finance and tax.</span>
-            </p>
-          </article>
-
-          <article class="pourquoi-carte scroll-reveal">
-            <div class="pourquoi-icone" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="32" height="32"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-            </div>
-            <h3 class="pourquoi-titre">
-              <span data-lang="fr">Tech-first depuis 2017</span>
-              <span data-lang="en">Tech-first since 2017</span>
-            </h3>
-            <p class="pourquoi-texte">
-              <span data-lang="fr">Nous maîtrisons et intégrons Dext, KNIME, QuickBooks, Xero, Acomba, Microsoft Dynamics 365 et Ramp pour automatiser la saisie et les conciliations. Vos économies de temps réelles dépendront de votre situation et seront évaluées lors de notre première rencontre.</span>
-              <span data-lang="en">We master and integrate Dext, KNIME, QuickBooks, Xero, Acomba, Microsoft Dynamics 365 and Ramp to automate data entry and reconciliations. Actual time savings will depend on your situation and will be assessed during our first meeting.</span>
-            </p>
-          </article>
-
-          <article class="pourquoi-carte scroll-reveal">
-            <div class="pourquoi-icone" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="32" height="32"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-            </div>
-            <h3 class="pourquoi-titre">
-              <span data-lang="fr">Bilingue, ancré au Québec</span>
-              <span data-lang="en">Bilingual, rooted in Quebec</span>
-            </h3>
-            <p class="pourquoi-texte">
-              <span data-lang="fr">Maîtrise approfondie des déclarations T2 et CO-17, TPS/TVQ, Loi 25 et des particularités fiscales québécoises. Votre comptable parle votre langue — littéralement.</span>
-              <span data-lang="en">Deep working knowledge of T2 and CO-17 filings, GST/QST, Law 25 and Quebec-specific tax rules. Your accountant speaks your language — literally.</span>
-            </p>
-          </article>
-
-          <article class="pourquoi-carte scroll-reveal">
-            <div class="pourquoi-icone" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="32" height="32"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-            </div>
-            <h3 class="pourquoi-titre">
-              <span data-lang="fr">Forfaits fixes, sans surprise</span>
-              <span data-lang="en">Fixed pricing, no surprises</span>
-            </h3>
-            <p class="pourquoi-texte">
-              <span data-lang="fr">Tarifs publiés. Sans frais d'installation. Sans engagement long terme. Vous savez exactement ce que vous payez chaque mois — coût des logiciels inclus.</span>
-              <span data-lang="en">Published pricing. No setup fees. No long-term commitment. You know exactly what you pay each month — software costs included.</span>
-            </p>
-          </article>
-
         </div>
       </div>
     </section>
 
     <!-- ============================================
-         SECTION ROADMAP 90 JOURS
+         BANDEAU PREUVES — faits vérifiables + stack technologique
          ============================================ -->
-    <section id="roadmap" class="section section-roadmap" aria-label="Notre processus en 90 jours">
-      <div class="section-contenu roadmap-contenu">
-        <span class="eyebrow scroll-reveal">
-          <span data-lang="fr">Processus 90 jours</span>
-          <span data-lang="en">90-day process</span>
-        </span>
-        <h2 class="scroll-reveal">
-          <span data-lang="fr">De la révision à l'autopilote. En 90 jours.</span>
-          <span data-lang="en">From review to autopilot. In 90 days.</span>
-        </h2>
-        <p class="roadmap-sous-titre scroll-reveal">
-          <span data-lang="fr">Un processus rodé pour que vous voyiez de vrais résultats dès le 30<sup>e</sup> jour.</span>
-          <span data-lang="en">A proven process so you see real results by day 30.</span>
-        </p>
+    <section class="adc-preuves" aria-label="Le cabinet en bref">
+      <div class="adc-wrap">
+        <dl class="adc-faits">
+          <div><dt>2017</dt><dd><span data-lang="fr">Année de fondation du cabinet</span><span data-lang="en">Year the firm was founded</span></dd></div>
+          <div><dt>20&nbsp;<span data-lang="fr">ans +</span><span data-lang="en">yrs +</span></dt><dd><span data-lang="fr">d'expérience du fondateur en finance d'entreprise</span><span data-lang="en">of founder experience in corporate finance</span></dd></div>
+          <div><dt>24&nbsp;h</dt><dd><span data-lang="fr">Délai de réponse maximal en jours ouvrables, prévu au contrat</span><span data-lang="en">Maximum response time on business days, set out in the contract</span></dd></div>
+          <div><dt>7</dt><dd><span data-lang="fr">plateformes comptables et de données maîtrisées</span><span data-lang="en">accounting and data platforms mastered</span></dd></div>
+        </dl>
+        <div class="adc-stack">
+          <p class="adc-stack__titre"><span data-lang="fr">Le stack technologique que nous maîtrisons</span><span data-lang="en">The tech stack we master</span></p>
+          <ul class="adc-stack__logos">
+            <li><img src="images/Carrousel/Dext-greyscale.png" alt="Dext" loading="lazy"></li>
+            <li><img src="images/Carrousel/KNIME-greyscale.png" alt="KNIME" loading="lazy"></li>
+            <li><img src="images/Carrousel/Xero-greyscale.png" alt="Xero" loading="lazy"></li>
+            <li><img src="images/Carrousel/QuickBooks-greyscale.png" alt="QuickBooks" loading="lazy"></li>
+            <li><img src="images/Carrousel/Microsoft%20Dynamics%20365-greyscale.png" alt="Microsoft Dynamics 365" loading="lazy"></li>
+            <li><img src="images/Carrousel/Acomba-greyscale.png" alt="Acomba" loading="lazy"></li>
+            <li><img src="images/Carrousel/Ramp-greyscale.png" alt="Ramp" loading="lazy"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-        <ol class="roadmap-etapes">
-
-          <li class="roadmap-etape scroll-reveal">
-            <div class="roadmap-jour">
-              <span data-lang="fr">Jour 1 – 7</span>
-              <span data-lang="en">Day 1 – 7</span>
+    <!-- ============================================
+         APPROCHE — Familial + Technologique
+         ============================================ -->
+    <section id="approche" class="adc-sec adc-approche" aria-label="Notre approche">
+      <div class="adc-wrap">
+        <header class="adc-entete">
+          <p class="adc-eyebrow scroll-reveal"><span class="adc-eyebrow__num" aria-hidden="true">01</span><span data-lang="fr">Notre approche</span><span data-lang="en">Our approach</span></p>
+          <h2 class="scroll-reveal"><span data-lang="fr">Familial par nature. <em>Technologique par conviction.</em></span><span data-lang="en">Family by nature. <em>Tech by conviction.</em></span></h2>
+          <p class="adc-entete__intro scroll-reveal"><span data-lang="fr">Deux engagements qui vont de pair&nbsp;: la proximité d'un cabinet à taille humaine, et des processus comptables modernisés par l'automatisation.</span><span data-lang="en">Two commitments that go hand in hand: the closeness of a human-scale firm, and accounting processes modernized through automation.</span></p>
+        </header>
+        <div class="adc-duo">
+          <article class="adc-pilier adc-pilier--famille scroll-reveal">
+            <p class="adc-pilier__label"><span data-lang="fr">Le cabinet familial</span><span data-lang="en">The family firm</span></p>
+            <h3><span data-lang="fr">Vous parlez aux personnes qui traitent votre dossier.</span><span data-lang="en">You speak with the people who handle your file.</span></h3>
+            <ul class="adc-pilier__liste">
+              <li>
+                <h4><span data-lang="fr">Un CPA, CA à la tête de votre dossier</span><span data-lang="en">A CPA, CA leading your file</span></h4>
+                <p><span data-lang="fr">Votre dossier est dirigé par Luc Pilon, CPA, CA, du début à la fin — plus de 20 ans d'expérience en finance corporative et en fiscalité.</span><span data-lang="en">Your file is led by Luc Pilon, CPA, CA, from start to finish — over 20 years of experience in corporate finance and tax.</span></p>
+              </li>
+              <li>
+                <h4><span data-lang="fr">Une réponse en 24&nbsp;h ouvrables</span><span data-lang="en">A reply within 24 business hours</span></h4>
+                <p><span data-lang="fr">Un engagement de délai de réponse inscrit au contrat de service.</span><span data-lang="en">A response-time commitment written into the service contract.</span></p>
+              </li>
+              <li>
+                <h4><span data-lang="fr">Bilingue, ancré au Québec</span><span data-lang="en">Bilingual, rooted in Quebec</span></h4>
+                <p><span data-lang="fr">Déclarations T2 et CO-17, TPS/TVQ, Loi&nbsp;25 et particularités fiscales québécoises, en français comme en anglais.</span><span data-lang="en">T2 and CO-17 filings, GST/QST, Law 25 and Quebec-specific tax rules, in French and in English.</span></p>
+              </li>
+              <li>
+                <h4><span data-lang="fr">Des honoraires clairs</span><span data-lang="en">Clear fees</span></h4>
+                <p><span data-lang="fr">Tarifs publiés, sans frais d'installation et sans engagement à long terme.</span><span data-lang="en">Published pricing, no setup fees and no long-term commitment.</span></p>
+              </li>
+            </ul>
+            <div class="adc-pilier__cta">
+              <a href="https://outlook.office.com/book/ConsultationGratuite30Minutes@affairedechiffres.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="adc-btn " data-event="approche_cta_click"><span data-lang="fr">Réserver un appel de 30 minutes</span><span data-lang="en">Book a 30-minute call</span><svg class="adc-btn__arrow" viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg></a>
+              <p class="adc-cta-note"><span data-lang="fr">Sans frais · Sans engagement</span><span data-lang="en">No charge · No commitment</span></p>
             </div>
-            <h3 class="roadmap-titre">
-              <span data-lang="fr">Révision éclair et prise en main</span>
-              <span data-lang="en">Quick review and onboarding</span>
-            </h3>
-            <p class="roadmap-texte">
-              <span data-lang="fr">Révision sans frais de votre situation actuelle, accès sécurisés aux logiciels existants, plan d'action personnalisé livré sous 7 jours.</span>
-              <span data-lang="en">No-charge review of your current situation, secure access to existing software, personalized action plan delivered within 7 days.</span>
-            </p>
-          </li>
+          </article>
+          <article class="adc-pilier adc-pilier--tech scroll-reveal">
+            <p class="adc-pilier__label"><span data-lang="fr">La technologie, sous toutes ses formes</span><span data-lang="en">Technology, in all its forms</span></p>
+            <h3><span data-lang="fr">Chaque tâche répétitive est confiée à un outil. Le jugement reste humain.</span><span data-lang="en">Every repetitive task goes to a tool. Judgment stays human.</span></h3>
+            <ul class="adc-pilier__liste">
+              <li>
+                <h4><span data-lang="fr">Capture et saisie automatisées</span><span data-lang="en">Automated capture and entry</span></h4>
+                <p><span data-lang="fr">Dext extrait les données de vos factures et reçus et les transmet à votre logiciel comptable — jusqu'à 80&nbsp;% de saisie manuelle en moins.</span><span data-lang="en">Dext extracts data from your invoices and receipts and sends it to your accounting software — up to 80% less manual entry.</span></p>
+              </li>
+              <li>
+                <h4><span data-lang="fr">Données et tableaux de bord</span><span data-lang="en">Data and dashboards</span></h4>
+                <p><span data-lang="fr">KNIME automatise les flux de données, relie vos sources d'information et produit des rapports financiers personnalisés.</span><span data-lang="en">KNIME automates data workflows, connects your information sources and produces custom financial reports.</span></p>
+              </li>
+              <li>
+                <h4><span data-lang="fr">Vos systèmes, intégrés</span><span data-lang="en">Your systems, integrated</span></h4>
+                <p><span data-lang="fr">QuickBooks, Xero, Acomba et Microsoft Dynamics 365&nbsp;: nous travaillons dans vos outils, ou nous implantons ceux qui conviennent.</span><span data-lang="en">QuickBooks, Xero, Acomba and Microsoft Dynamics 365: we work in your tools, or implement the right ones.</span></p>
+              </li>
+              <li>
+                <h4><span data-lang="fr">Dépenses et cartes d'entreprise</span><span data-lang="en">Spend and corporate cards</span></h4>
+                <p><span data-lang="fr">Ramp pour encadrer les dépenses et alimenter la comptabilité en continu.</span><span data-lang="en">Ramp to control spending and feed the books continuously.</span></p>
+              </li>
+            </ul>
+            <p class="adc-pilier__note"><span data-lang="fr">Les gains de temps réels dépendent de votre situation et sont évalués lors de la première rencontre.</span><span data-lang="en">Actual time savings depend on your situation and are assessed during the first meeting.</span></p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-          <li class="roadmap-etape scroll-reveal">
-            <div class="roadmap-jour">
-              <span data-lang="fr">Jour 8 – 30</span>
-              <span data-lang="en">Day 8 – 30</span>
+    <!-- ============================================
+         SERVICES
+         ============================================ -->
+    <section id="services" class="adc-sec adc-services" aria-label="Services">
+      <div class="adc-wrap">
+        <header class="adc-entete">
+          <p class="adc-eyebrow scroll-reveal"><span class="adc-eyebrow__num" aria-hidden="true">02</span><span data-lang="fr">Services</span><span data-lang="en">Services</span></p>
+          <h2 class="scroll-reveal"><span data-lang="fr">Trois expertises, <em>une seule équipe.</em></span><span data-lang="en">Three areas of expertise, <em>one team.</em></span></h2>
+          <p class="adc-entete__intro scroll-reveal"><span data-lang="fr">De la planification fiscale à l'automatisation comptable, nous livrons des solutions mesurables — pas du jargon.</span><span data-lang="en">From tax planning to accounting automation, we deliver measurable outcomes — not jargon.</span></p>
+        </header>
+        <div class="adc-services__grille">
+          <article class="adc-service scroll-reveal">
+            <span class="adc-service__num" aria-hidden="true">01</span>
+            <h3><span data-lang="fr">Tenue de livres et comptabilité</span><span data-lang="en">Bookkeeping &amp; accounting</span></h3>
+            <p class="adc-service__desc"><span data-lang="fr">Prise en charge complète ou partielle de votre comptabilité&nbsp;: saisie des transactions, conciliations bancaires, production d'états financiers et rapports périodiques.</span><span data-lang="en">Full or partial management of your bookkeeping: transaction entry, bank reconciliations, financial statement preparation and periodic reporting.</span></p>
+            <ul class="adc-checks">
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Conciliation bancaire automatisée</span><span data-lang="en">Automated bank reconciliation</span></span></li>
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">États financiers mensuels</span><span data-lang="en">Monthly financial statements</span></span></li>
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Gestion des comptes fournisseurs et clients</span><span data-lang="en">Accounts payable and receivable management</span></span></li>
+            </ul>
+            <div class="adc-service__prix">
+              <p class="adc-service__montant"><span data-lang="fr">À partir de <strong>450&nbsp;$</strong> / mois</span><span data-lang="en">From <strong>$450</strong> / month</span></p>
+              <p class="adc-service__note"><span data-lang="fr">3 forfaits mensuels · sans engagement</span><span data-lang="en">3 monthly plans · no commitment</span></p>
             </div>
-            <h3 class="roadmap-titre">
-              <span data-lang="fr">Mise en place et automatisation</span>
-              <span data-lang="en">Setup and automation</span>
-            </h3>
-            <p class="roadmap-texte">
-              <span data-lang="fr">Implantation Dext, conciliations bancaires automatisées, rattrapage comptable au besoin, premier rapport financier livré.</span>
-              <span data-lang="en">Dext setup, automated bank reconciliations, bookkeeping cleanup if needed, first financial report delivered.</span>
-            </p>
-          </li>
-
-          <li class="roadmap-etape scroll-reveal">
-            <div class="roadmap-jour">
-              <span data-lang="fr">Jour 31 – 60</span>
-              <span data-lang="en">Day 31 – 60</span>
+          </article>
+          <article class="adc-service scroll-reveal">
+            <span class="adc-service__num" aria-hidden="true">02</span>
+            <h3><span data-lang="fr">Planification fiscale</span><span data-lang="en">Tax planning</span></h3>
+            <p class="adc-service__desc"><span data-lang="fr">Nous accompagnons les particuliers et les entreprises dans l'optimisation de leur situation fiscale, en conformité avec les lois et règlements en vigueur.</span><span data-lang="en">We help individuals and businesses optimize their tax situation in compliance with applicable laws and regulations.</span></p>
+            <ul class="adc-checks">
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Optimisation de la rémunération mixte (salaire/dividendes)</span><span data-lang="en">Mixed compensation optimization (salary/dividends)</span></span></li>
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Planification de fin d'année fiscale</span><span data-lang="en">Year-end tax planning</span></span></li>
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Réorganisation corporative</span><span data-lang="en">Corporate reorganization</span></span></li>
+            </ul>
+            <div class="adc-service__prix">
+              <p class="adc-service__montant"><span data-lang="fr"><strong>350&nbsp;$</strong> / heure</span><span data-lang="en"><strong>$350</strong> / hour</span></p>
+              <p class="adc-service__note"><span data-lang="fr">Mandat ponctuel ou forfait annuel · Soumission gratuite en 24&nbsp;h</span><span data-lang="en">One-time engagement or annual plan · Free 24h quote</span></p>
             </div>
-            <h3 class="roadmap-titre">
-              <span data-lang="fr">Stabilisation et tableaux de bord</span>
-              <span data-lang="en">Stabilization and dashboards</span>
-            </h3>
-            <p class="roadmap-texte">
-              <span data-lang="fr">Tableaux de bord KNIME pour suivre votre rentabilité, première rencontre stratégique mensuelle, recommandations fiscales préliminaires.</span>
-              <span data-lang="en">KNIME dashboards to track your profitability, first monthly strategy meeting, preliminary tax recommendations.</span>
-            </p>
-          </li>
-
-          <li class="roadmap-etape scroll-reveal">
-            <div class="roadmap-jour">
-              <span data-lang="fr">Jour 61 – 90</span>
-              <span data-lang="en">Day 61 – 90</span>
+          </article>
+          <article class="adc-service scroll-reveal">
+            <span class="adc-service__num" aria-hidden="true">03</span>
+            <h3><span data-lang="fr">Intégration technologique</span><span data-lang="en">Technology integration</span></h3>
+            <p class="adc-service__desc"><span data-lang="fr">Nous aidons nos clients à sélectionner et à implanter des outils technologiques pour moderniser leurs processus comptables et financiers.</span><span data-lang="en">We help our clients select and implement technology solutions to modernize their accounting and financial processes.</span></p>
+            <ul class="adc-checks">
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Implantation Dext et QuickBooks</span><span data-lang="en">Dext and QuickBooks implementation</span></span></li>
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Automatisation de la saisie de factures</span><span data-lang="en">Invoice entry automation</span></span></li>
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Tableaux de bord financiers avec KNIME</span><span data-lang="en">Financial dashboards with KNIME</span></span></li>
+            </ul>
+            <div class="adc-service__prix">
+              <p class="adc-service__montant"><span data-lang="fr"><strong>250&nbsp;$</strong> / heure (hors forfait)</span><span data-lang="en"><strong>$250</strong> / hour (standalone)</span></p>
+              <p class="adc-service__note"><span data-lang="fr">Inclus sans frais additionnels dans les forfaits Complet et Premium</span><span data-lang="en">Included at no extra cost in the Complete and Premium packages</span></p>
             </div>
-            <h3 class="roadmap-titre">
-              <span data-lang="fr">Optimisation fiscale et croissance</span>
-              <span data-lang="en">Tax optimization and growth</span>
-            </h3>
-            <p class="roadmap-texte">
-              <span data-lang="fr">Plan d'optimisation fiscale annuel (rémunération mixte, fin d'année, T2/CO-17), revue des KPIs et recommandations pour les 6 prochains mois.</span>
-              <span data-lang="en">Annual tax optimization plan (mixed compensation, year-end, T2/CO-17), KPI review and recommendations for the next 6 months.</span>
-            </p>
-          </li>
+          </article>
+        </div>
+        <div class="adc-relance scroll-reveal">
+          <p><span data-lang="fr">Un besoin qui touche plusieurs de ces services&nbsp;? Trente minutes suffisent pour cadrer le mandat.</span><span data-lang="en">A need that spans several of these services? Thirty minutes is enough to scope the engagement.</span></p>
+          <a href="https://outlook.office.com/book/ConsultationGratuite30Minutes@affairedechiffres.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="adc-btn " data-event="services_cta_click"><span data-lang="fr">Réserver un appel de 30 minutes</span><span data-lang="en">Book a 30-minute call</span><svg class="adc-btn__arrow" viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg></a>
+        </div>
+      </div>
+    </section>
 
+    <!-- ============================================
+         PROCESSUS 90 JOURS
+         ============================================ -->
+    <section id="roadmap" class="adc-sec adc-roadmap" aria-label="Notre processus en 90 jours">
+      <div class="adc-wrap">
+        <header class="adc-entete">
+          <p class="adc-eyebrow scroll-reveal"><span class="adc-eyebrow__num" aria-hidden="true">03</span><span data-lang="fr">Processus 90 jours</span><span data-lang="en">90-day process</span></p>
+          <h2 class="scroll-reveal"><span data-lang="fr">De la révision à l'autopilote. <em>En 90 jours.</em></span><span data-lang="en">From review to autopilot. <em>In 90 days.</em></span></h2>
+          <p class="adc-entete__intro scroll-reveal"><span data-lang="fr">Un processus structuré en quatre étapes, avec un premier rapport financier livré dès le premier mois.</span><span data-lang="en">A structured four-step process, with a first financial report delivered in the first month.</span></p>
+        </header>
+        <ol class="adc-etapes">
+          <li class="adc-etape scroll-reveal">
+            <span class="adc-etape__jour"><span data-lang="fr">Jour 1 – 7</span><span data-lang="en">Day 1 – 7</span></span>
+            <h3><span data-lang="fr">Révision éclair et prise en main</span><span data-lang="en">Quick review and onboarding</span></h3>
+            <p><span data-lang="fr">Révision sans frais de votre situation actuelle, accès sécurisés aux logiciels existants, plan d'action personnalisé livré sous 7 jours.</span><span data-lang="en">No-charge review of your current situation, secure access to existing software, personalized action plan delivered within 7 days.</span></p>
+          </li>
+          <li class="adc-etape scroll-reveal">
+            <span class="adc-etape__jour"><span data-lang="fr">Jour 8 – 30</span><span data-lang="en">Day 8 – 30</span></span>
+            <h3><span data-lang="fr">Mise en place et automatisation</span><span data-lang="en">Setup and automation</span></h3>
+            <p><span data-lang="fr">Implantation Dext, conciliations bancaires automatisées, rattrapage comptable au besoin, premier rapport financier livré.</span><span data-lang="en">Dext setup, automated bank reconciliations, bookkeeping cleanup if needed, first financial report delivered.</span></p>
+          </li>
+          <li class="adc-etape scroll-reveal">
+            <span class="adc-etape__jour"><span data-lang="fr">Jour 31 – 60</span><span data-lang="en">Day 31 – 60</span></span>
+            <h3><span data-lang="fr">Stabilisation et tableaux de bord</span><span data-lang="en">Stabilization and dashboards</span></h3>
+            <p><span data-lang="fr">Tableaux de bord KNIME pour suivre votre rentabilité, première rencontre stratégique mensuelle, recommandations fiscales préliminaires.</span><span data-lang="en">KNIME dashboards to track your profitability, first monthly strategy meeting, preliminary tax recommendations.</span></p>
+          </li>
+          <li class="adc-etape scroll-reveal">
+            <span class="adc-etape__jour"><span data-lang="fr">Jour 61 – 90</span><span data-lang="en">Day 61 – 90</span></span>
+            <h3><span data-lang="fr">Optimisation fiscale et croissance</span><span data-lang="en">Tax optimization and growth</span></h3>
+            <p><span data-lang="fr">Plan d'optimisation fiscale annuel (rémunération mixte, fin d'année, T2/CO-17), revue des KPIs et recommandations pour les 6 prochains mois.</span><span data-lang="en">Annual tax optimization plan (mixed compensation, year-end, T2/CO-17), KPI review and recommendations for the next 6 months.</span></p>
+          </li>
         </ol>
       </div>
     </section>
 
-    <!-- Section Forfaits — fond crème -->
-    <section id="forfaits" class="section section-forfaits" aria-label="Forfaits">
-      <div class="section-contenu forfaits-contenu">
-
-        <span class="eyebrow scroll-reveal">
-          <span data-lang="fr">Forfaits</span>
-          <span data-lang="en">Pricing</span>
-        </span>
-        <h2 class="scroll-reveal">
-          <span data-lang="fr">Un tarif fixe. Zéro facture surprise.</span>
-          <span data-lang="en">Fixed pricing. Zero surprise invoices.</span>
-        </h2>
-        <p class="forfaits-sous-titre scroll-reveal">
-          <span data-lang="fr">Quatre formules mensuelles, tout inclus. Choisissez l'intensité qui correspond à votre stade de croissance.</span>
-          <span data-lang="en">Four all-inclusive monthly plans. Pick the intensity that fits your growth stage.</span>
-        </p>
-
-        <div class="forfaits-grille">
-
-          <!-- Forfait Démarrage — nouveau, point d'entrée bas -->
-          <article class="carte-forfait scroll-reveal">
-            <div class="forfait-entete">
-              <h3 class="forfait-nom">
-                <span data-lang="fr">Démarrage</span><span data-lang="en">Starter</span>
-              </h3>
-              <p class="forfait-prix">
-                <span data-lang="fr">À partir de 750&nbsp;$<span class="forfait-prix-suffixe"> / unique</span></span>
-                <span data-lang="en">From $750<span class="forfait-prix-suffixe"> / one-time</span></span>
-              </p>
-              <p class="forfait-prix-detail">
-                <span data-lang="fr">Idéal pour PME en démarrage ou pour rattrapage comptable</span>
-                <span data-lang="en">Ideal for early-stage SMEs or bookkeeping cleanup</span>
-              </p>
-            </div>
-            <ul class="forfait-liste">
-              <li>
-                <span data-lang="fr">Rattrapage comptable jusqu'à 12 mois</span>
-                <span data-lang="en">Bookkeeping cleanup up to 12 months</span>
-              </li>
-              <li>
-                <span data-lang="fr">Mise en place QuickBooks ou Xero</span>
-                <span data-lang="en">QuickBooks or Xero setup</span>
-              </li>
-              <li>
-                <span data-lang="fr">Premier mois de tenue de livres inclus</span>
-                <span data-lang="en">First month of bookkeeping included</span>
-              </li>
-              <li>
-                <span data-lang="fr">Plan d'action sur 90 jours</span>
-                <span data-lang="en">90-day action plan</span>
-              </li>
+    <!-- ============================================
+         FORFAITS
+         ============================================ -->
+    <section id="forfaits" class="adc-sec adc-forfaits" aria-label="Forfaits">
+      <div class="adc-wrap">
+        <header class="adc-entete">
+          <p class="adc-eyebrow scroll-reveal"><span class="adc-eyebrow__num" aria-hidden="true">04</span><span data-lang="fr">Forfaits</span><span data-lang="en">Pricing</span></p>
+          <h2 class="scroll-reveal"><span data-lang="fr">Un tarif fixe. <em>Zéro facture surprise.</em></span><span data-lang="en">Fixed pricing. <em>Zero surprise invoices.</em></span></h2>
+          <p class="adc-entete__intro scroll-reveal"><span data-lang="fr">Quatre formules, tout inclus. Choisissez l'intensité qui correspond à votre stade de croissance.</span><span data-lang="en">Four all-inclusive plans. Pick the intensity that fits your growth stage.</span></p>
+        </header>
+        <div class="adc-forfaits__grille">
+          <article class="adc-forfait scroll-reveal">
+            
+            <h3 class="adc-forfait__nom"><span data-lang="fr">Démarrage</span><span data-lang="en">Starter</span></h3>
+            <p class="adc-forfait__prix"><span data-lang="fr">À partir de 750&nbsp;$<small> / unique</small></span><span data-lang="en">From $750<small> / one-time</small></span></p>
+            <p class="adc-forfait__detail"><span data-lang="fr">Idéal pour PME en démarrage ou pour rattrapage comptable</span><span data-lang="en">Ideal for early-stage SMEs or bookkeeping cleanup</span></p>
+            <ul class="adc-checks">
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Rattrapage comptable jusqu'à 12 mois</span><span data-lang="en">Bookkeeping cleanup up to 12 months</span></span></li>
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Mise en place QuickBooks ou Xero</span><span data-lang="en">QuickBooks or Xero setup</span></span></li>
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Premier mois de tenue de livres inclus</span><span data-lang="en">First month of bookkeeping included</span></span></li>
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Plan d'action sur 90 jours</span><span data-lang="en">90-day action plan</span></span></li>
             </ul>
-            <a href="#contact?service=demarrage" class="btn btn-carte-outline">
-              <span data-lang="fr">Obtenir ma soumission</span>
-              <span data-lang="en">Get my quote</span>
-            </a>
+            
+            <a href="https://outlook.office.com/book/ConsultationGratuite30Minutes@affairedechiffres.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="adc-forfait__cta" data-event="forfait_demarrage_click"><span data-lang="fr">Réserver un appel</span><span data-lang="en">Book a call</span><svg class="adc-btn__arrow" viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg></a>
           </article>
-
-          <!-- Forfait Essentiel -->
-          <article class="carte-forfait scroll-reveal">
-            <div class="forfait-entete">
-              <h3 class="forfait-nom">
-                <span data-lang="fr">Essentiel</span><span data-lang="en">Standard</span>
-              </h3>
-              <p class="forfait-prix">
-                <span data-lang="fr">450 — 600&nbsp;$<span class="forfait-prix-suffixe"> / mois</span></span>
-                <span data-lang="en">$450 — $600<span class="forfait-prix-suffixe"> / month</span></span>
-              </p>
-              <p class="forfait-prix-detail">
-                <span data-lang="fr">≈ 530 — 700 $/mois tout inclus avec logiciels</span>
-                <span data-lang="en">≈ $530 — $700/mo all-in (incl. software)</span>
-              </p>
-            </div>
-            <ul class="forfait-liste">
-              <li>
-                <span data-lang="fr">Tenue de livres standard</span>
-                <span data-lang="en">Standard bookkeeping</span>
-              </li>
-              <li>
-                <span data-lang="fr">Intégration technologique et accompagnement supervisé</span>
-                <span data-lang="en">Technology onboarding with supervised support</span>
-              </li>
-              <li>
-                <span data-lang="fr">États financiers annuels</span>
-                <span data-lang="en">Annual financial statements</span>
-              </li>
-              <li>
-                <span data-lang="fr">Engagement de réponse en 24 h ouvrables</span>
-                <span data-lang="en">24-business-hour response commitment</span>
-              </li>
+          <article class="adc-forfait scroll-reveal">
+            
+            <h3 class="adc-forfait__nom"><span data-lang="fr">Essentiel</span><span data-lang="en">Standard</span></h3>
+            <p class="adc-forfait__prix"><span data-lang="fr">450 — 600&nbsp;$<small> / mois</small></span><span data-lang="en">$450 — $600<small> / month</small></span></p>
+            <p class="adc-forfait__detail"><span data-lang="fr">≈ 530 — 700&nbsp;$/mois tout inclus avec logiciels</span><span data-lang="en">≈ $530 — $700/mo all-in (incl. software)</span></p>
+            <ul class="adc-checks">
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Tenue de livres standard</span><span data-lang="en">Standard bookkeeping</span></span></li>
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Intégration technologique et accompagnement supervisé</span><span data-lang="en">Technology onboarding with supervised support</span></span></li>
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">États financiers annuels</span><span data-lang="en">Annual financial statements</span></span></li>
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Engagement de réponse en 24&nbsp;h ouvrables</span><span data-lang="en">24-business-hour response commitment</span></span></li>
             </ul>
-            <a href="#contact?service=essentiel" class="btn btn-carte-outline">
-              <span data-lang="fr">Obtenir ma soumission</span>
-              <span data-lang="en">Get my quote</span>
-            </a>
+            
+            <a href="https://outlook.office.com/book/ConsultationGratuite30Minutes@affairedechiffres.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="adc-forfait__cta" data-event="forfait_essentiel_click"><span data-lang="fr">Réserver un appel</span><span data-lang="en">Book a call</span><svg class="adc-btn__arrow" viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg></a>
           </article>
-
-          <!-- Forfait Complet (vedette) -->
-          <article class="carte-forfait carte-forfait-vedette scroll-reveal">
-            <div class="forfait-badge">
-              <span data-lang="fr">Populaire</span><span data-lang="en">Popular</span>
-            </div>
-            <div class="forfait-entete">
-              <h3 class="forfait-nom">
-                <span data-lang="fr">Complet</span><span data-lang="en">Complete</span>
-              </h3>
-              <p class="forfait-prix">
-                <span data-lang="fr">650 — 900&nbsp;$<span class="forfait-prix-suffixe"> / mois</span></span>
-                <span data-lang="en">$650 — $900<span class="forfait-prix-suffixe"> / month</span></span>
-              </p>
-              <p class="forfait-prix-detail">
-                <span data-lang="fr">≈ 730 — 1 000 $/mois tout inclus avec logiciels</span>
-                <span data-lang="en">≈ $730 — $1,000/mo all-in (incl. software)</span>
-              </p>
-            </div>
-            <ul class="forfait-liste">
-              <li>
-                <span data-lang="fr">Tenue de livres complète</span>
-                <span data-lang="en">Complete bookkeeping</span>
-              </li>
-              <li>
-                <span data-lang="fr">Intégration technologique et accompagnement</span>
-                <span data-lang="en">Technology onboarding and support</span>
-              </li>
-              <li>
-                <span data-lang="fr">Déclarations T2 (impôt des sociétés)</span>
-                <span data-lang="en">T2 corporate tax filings</span>
-              </li>
-              <li>
-                <span data-lang="fr">Déclarations TPS/TVQ</span>
-                <span data-lang="en">GST/QST filings</span>
-              </li>
-              <li>
-                <span data-lang="fr">États financiers complets</span>
-                <span data-lang="en">Complete financial statements</span>
-              </li>
-              <li>
-                <span data-lang="fr">Premier mois satisfait ou remboursé</span>
-                <span data-lang="en">First month money-back guarantee</span>
-              </li>
+          <article class="adc-forfait adc-forfait--vedette scroll-reveal">
+            <span class="adc-forfait__badge"><span data-lang="fr">Populaire</span><span data-lang="en">Popular</span></span>
+            <h3 class="adc-forfait__nom"><span data-lang="fr">Complet</span><span data-lang="en">Complete</span></h3>
+            <p class="adc-forfait__prix"><span data-lang="fr">650 — 900&nbsp;$<small> / mois</small></span><span data-lang="en">$650 — $900<small> / month</small></span></p>
+            <p class="adc-forfait__detail"><span data-lang="fr">≈ 730 — 1&nbsp;000&nbsp;$/mois tout inclus avec logiciels</span><span data-lang="en">≈ $730 — $1,000/mo all-in (incl. software)</span></p>
+            <ul class="adc-checks">
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Tenue de livres complète</span><span data-lang="en">Complete bookkeeping</span></span></li>
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Intégration technologique et accompagnement</span><span data-lang="en">Technology onboarding and support</span></span></li>
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Déclarations T2 (impôt des sociétés)</span><span data-lang="en">T2 corporate tax filings</span></span></li>
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Déclarations TPS/TVQ</span><span data-lang="en">GST/QST filings</span></span></li>
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">États financiers complets</span><span data-lang="en">Complete financial statements</span></span></li>
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Premier mois satisfait ou remboursé</span><span data-lang="en">First month money-back guarantee</span></span></li>
             </ul>
-            <a href="#contact?service=complet" class="btn btn-primaire btn-carte-plein">
-              <span data-lang="fr">Obtenir ma soumission</span>
-              <span data-lang="en">Get my quote</span>
-            </a>
+            <a href="forfait-complet.html" class="adc-forfait__lien" data-event="hero_forfait_click"><span data-lang="fr">Voir le détail du forfait Complet</span><span data-lang="en">See the Complete plan in detail</span></a>
+            <a href="https://outlook.office.com/book/ConsultationGratuite30Minutes@affairedechiffres.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="adc-forfait__cta" data-event="forfait_complet_click"><span data-lang="fr">Réserver un appel</span><span data-lang="en">Book a call</span><svg class="adc-btn__arrow" viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg></a>
           </article>
-
-          <!-- Forfait Premium -->
-          <article class="carte-forfait scroll-reveal">
-            <div class="forfait-entete">
-              <h3 class="forfait-nom">
-                <span data-lang="fr">Premium</span><span data-lang="en">Premium</span>
-              </h3>
-              <p class="forfait-prix">
-                <span data-lang="fr">900&nbsp;$+<span class="forfait-prix-suffixe"> / mois</span></span>
-                <span data-lang="en">$900+<span class="forfait-prix-suffixe"> / month</span></span>
-              </p>
-              <p class="forfait-prix-detail">
-                <span data-lang="fr">≈ 1 000 $+ /mois tout inclus avec logiciels</span>
-                <span data-lang="en">≈ $1,000+/mo all-in (incl. software)</span>
-              </p>
-            </div>
-            <ul class="forfait-liste">
-              <li>
-                <span data-lang="fr">Tous les services du forfait Complet</span>
-                <span data-lang="en">All services from the Complete package</span>
-              </li>
-              <li>
-                <span data-lang="fr">Intégration technologique avancée (KNIME et autres outils)</span>
-                <span data-lang="en">Advanced technology integration (KNIME and other tools)</span>
-              </li>
-              <li>
-                <span data-lang="fr">Génération de rapports automatisés</span>
-                <span data-lang="en">Automated report generation</span>
-              </li>
-              <li>
-                <span data-lang="fr">Production de rapports complexes et personnalisés</span>
-                <span data-lang="en">Complex and custom report production</span>
-              </li>
-              <li>
-                <span data-lang="fr">Accès direct au fondateur · Réunion mensuelle</span>
-                <span data-lang="en">Direct founder access · Monthly review meeting</span>
-              </li>
+          <article class="adc-forfait scroll-reveal">
+            
+            <h3 class="adc-forfait__nom"><span data-lang="fr">Premium</span><span data-lang="en">Premium</span></h3>
+            <p class="adc-forfait__prix"><span data-lang="fr">900&nbsp;$+<small> / mois</small></span><span data-lang="en">$900+<small> / month</small></span></p>
+            <p class="adc-forfait__detail"><span data-lang="fr">≈ 1&nbsp;000&nbsp;$+ /mois tout inclus avec logiciels</span><span data-lang="en">≈ $1,000+/mo all-in (incl. software)</span></p>
+            <ul class="adc-checks">
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Tous les services du forfait Complet</span><span data-lang="en">All services from the Complete package</span></span></li>
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Intégration technologique avancée (KNIME et autres outils)</span><span data-lang="en">Advanced technology integration (KNIME and other tools)</span></span></li>
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Génération de rapports automatisés</span><span data-lang="en">Automated report generation</span></span></li>
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Production de rapports complexes et personnalisés</span><span data-lang="en">Complex and custom report production</span></span></li>
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Accès direct au fondateur · Réunion mensuelle</span><span data-lang="en">Direct founder access · Monthly review meeting</span></span></li>
             </ul>
-            <a href="#contact?service=premium" class="btn btn-carte-outline">
-              <span data-lang="fr">Obtenir ma soumission</span>
-              <span data-lang="en">Get my quote</span>
-            </a>
+            
+            <a href="https://outlook.office.com/book/ConsultationGratuite30Minutes@affairedechiffres.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="adc-forfait__cta" data-event="forfait_premium_click"><span data-lang="fr">Réserver un appel</span><span data-lang="en">Book a call</span><svg class="adc-btn__arrow" viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg></a>
           </article>
-
-        </div><!-- /.forfaits-grille -->
-
+        </div>
+        <div class="adc-surmesure scroll-reveal">
+          <div>
+            <h3><span data-lang="fr">Structure plus complexe&nbsp;?</span><span data-lang="en">A more complex structure?</span></h3>
+            <p><span data-lang="fr">Plusieurs sociétés, un volume élevé d'opérations ou des rapports sur mesure&nbsp;: nous établissons une proposition adaptée après un premier appel.</span><span data-lang="en">Several corporations, a high volume of transactions or custom reporting: we prepare a tailored proposal after a first call.</span></p>
+          </div>
+          <a href="https://outlook.office.com/book/ConsultationGratuite30Minutes@affairedechiffres.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="adc-btn adc-btn--clair" data-event="surmesure_cta_click"><span data-lang="fr">Réserver un appel de 30 minutes</span><span data-lang="en">Book a 30-minute call</span><svg class="adc-btn__arrow" viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg></a>
+        </div>
         <!-- Exclusions — conformité art. 94 Code de déontologie des CPA du Québec -->
-        <p class="forfaits-exclusions scroll-reveal">
-          <span data-lang="fr">Avant taxes. Frais d'abonnement aux logiciels tiers (Dext et outils similaires) non inclus. Le tarif varie selon la complexité des opérations et la fréquence de production des rapports.</span>
-          <span data-lang="en">Before taxes. Third-party software subscription fees (Dext and similar tools) not included. Pricing varies based on operational complexity and reporting frequency.</span>
-        </p>
-
+        <p class="adc-exclusions scroll-reveal"><span data-lang="fr">Avant taxes. Frais d'abonnement aux logiciels tiers (Dext et outils similaires) non inclus. Le tarif varie selon la complexité des opérations et la fréquence de production des rapports.</span><span data-lang="en">Before taxes. Third-party software subscription fees (Dext and similar tools) not included. Pricing varies based on operational complexity and reporting frequency.</span></p>
       </div>
     </section>
 
-    <!-- Section Outils — fond crème -->
-    <section id="outils" class="section section-outils-detail" aria-label="Outils">
-      <div class="section-contenu outils-detail-contenu">
-
-        <span class="eyebrow scroll-reveal">
-          <span data-lang="fr">Technologie</span>
-          <span data-lang="en">Technology</span>
-        </span>
-
-        <h2 class="scroll-reveal">
-          <span data-lang="fr">Les outils qui rendent votre comptabilité invisible.</span>
-          <span data-lang="en">The tools that make your accounting invisible.</span>
-        </h2>
-        <p class="outils-detail-sous-titre scroll-reveal">
-          <span data-lang="fr">Automatisation, extraction de données et tableaux de bord — pour que vous passiez moins de temps dans Excel et plus dans votre entreprise.</span>
-          <span data-lang="en">Automation, data extraction and dashboards — so you spend less time in Excel and more in your business.</span>
-        </p>
-
-        <div class="outils-grille">
-
-          <!-- Dext -->
-          <article class="carte-outil scroll-reveal">
-            <img src="images/Carrousel/DEXT%20COLOR%20LOGO.png" alt="Dext" class="carte-outil-logo">
-            <p class="carte-outil-description">
-              <span data-lang="fr">Automatisez la collecte et le traitement de vos factures et reçus. Dext extrait les données de vos documents comptables et les transmet directement à votre logiciel de comptabilité, éliminant la saisie manuelle et réduisant les erreurs.</span>
-              <span data-lang="en">Automate the collection and processing of your invoices and receipts. Dext extracts data from your accounting documents and sends it directly to your accounting software, eliminating manual entry and reducing errors.</span>
-            </p>
-            <div class="outil-benefice">
-              <span data-lang="fr">Réduction jusqu'à 80 % du temps de saisie manuelle des factures et reçus.</span>
-              <span data-lang="en">Up to 80% reduction in manual invoice and receipt entry time.</span>
-            </div>
-            <a href="#contact" class="btn btn-primaire btn-outil">
-              <span data-lang="fr">En savoir plus</span>
-              <span data-lang="en">Learn more</span>
-            </a>
-          </article>
-
-          <!-- KNIME -->
-          <article class="carte-outil carte-outil-knime scroll-reveal">
-            <img src="images/Carrousel/KNIME%20COLOR%20LOGO.png" alt="KNIME" class="carte-outil-logo">
-            <p class="carte-outil-description">
-              <span data-lang="fr">Analysez et transformez vos données financières grâce à une plateforme visuelle et intuitive. KNIME permet d'automatiser les flux de données, de créer des rapports personnalisés et de connecter vos différentes sources d'information sans programmation complexe.</span>
-              <span data-lang="en">Analyze and transform your financial data with a visual, intuitive platform. KNIME automates data workflows, creates custom reports and connects your various data sources without complex programming.</span>
-            </p>
-            <div class="outil-benefice outil-benefice-knime">
-              <span data-lang="fr">Des rapports financiers personnalisés générés en quelques clics plutôt qu'en quelques heures.</span>
-              <span data-lang="en">Custom financial reports generated in clicks, not hours.</span>
-            </div>
-            <a href="#contact" class="btn btn-primaire btn-outil">
-              <span data-lang="fr">En savoir plus</span>
-              <span data-lang="en">Learn more</span>
-            </a>
-          </article>
-
+    <!-- ============================================
+         À PROPOS
+         ============================================ -->
+    <section id="a-propos" class="adc-sec adc-apropos" aria-label="À propos">
+      <div class="adc-wrap adc-apropos__grille">
+        <div class="adc-apropos__photo scroll-reveal">
+          <img src="images/Luc%20Pilon%20profile.jfif" alt="Luc Pilon, CPA, CA — Fondateur d'Affaire de Chiffres" width="400" height="400" loading="lazy">
         </div>
-
-      </div>
-    </section>
-
-
-    <!-- Section À propos — fond crème -->
-    <section id="a-propos" class="section section-a-propos" aria-label="À propos">
-      <div class="section-contenu apropos-contenu">
-
-        <!-- Titre de section -->
-        <span class="eyebrow scroll-reveal">
-          <span data-lang="fr">À propos</span>
-          <span data-lang="en">About</span>
-        </span>
-        <h2 class="scroll-reveal">
-          <span data-lang="fr">Vingt ans d'expérience. Une équipe à votre mesure.</span>
-          <span data-lang="en">Twenty years of experience. A team built around you.</span>
-        </h2>
-
-        <!-- ============================================
-             BLOC PHILOSOPHIE
-             ============================================ -->
-        <div class="apropos-philosophie scroll-reveal">
-          <h3 class="apropos-sous-titre">
-            <span data-lang="fr">Notre approche</span>
-            <span data-lang="en">Our approach</span>
-          </h3>
-          <p class="apropos-texte">
-            <span data-lang="fr">Chez Affaire de Chiffres, nous croyons que la comptabilité moderne repose sur l'intégration judicieuse des technologies émergentes. En exploitant des outils tels que Dext, KNIME et d'autres solutions d'automatisation, nous simplifions les processus comptables de nos clients pour qu'ils puissent se concentrer sur la croissance de leur entreprise. Depuis 2017, nous combinons rigueur professionnelle et innovation technologique au service des particuliers et des entreprises de Montréal et de la Montérégie.</span>
-            <span data-lang="en">At Affaire de Chiffres, we believe that modern accounting relies on the smart integration of emerging technologies. By leveraging tools such as Dext, KNIME and other automation solutions, we simplify our clients' accounting processes so they can focus on growing their business. Since 2017, we have been combining professional rigour and technological innovation to serve individuals and businesses in Montréal and the Montérégie region.</span>
-          </p>
-        </div>
-
-        <!-- Séparateur visuel ambre -->
-        <hr class="apropos-separateur" aria-hidden="true">
-
-        <!-- ============================================
-             BLOC ÉQUIPE
-             ============================================ -->
-        <div class="apropos-equipe scroll-reveal">
-          <h3 class="apropos-sous-titre">
-            <span data-lang="fr">Notre Leader</span>
-            <span data-lang="en">Our Leader</span>
-          </h3>
-
-          <div class="equipe-grille">
-
-            <!-- Carte Profil — Luc Pilon -->
-            <article class="carte-profil">
-              <div class="photo-profil-wrapper">
-                <img src="images/Luc%20Pilon%20profile.jfif" alt="Luc Pilon, CPA, CA — Fondateur d'Affaire de Chiffres" class="photo-profil" width="240" height="240" loading="lazy">
-                <div class="photo-overlay">
-                  <a href="mailto:conseils@affairedechiffres.com" class="overlay-lien">conseils@affairedechiffres.com</a>
-                </div>
-              </div>
-              <div class="profil-texte">
-                <h3 class="profil-nom">Luc Pilon, CPA, CA</h3>
-                <p class="profil-role">
-                  <span data-lang="fr">Fondateur · CPA, CA</span>
-                  <span data-lang="en">Founder · CPA, CA</span>
-                </p>
-                <p class="profil-description">
-                  <span data-lang="fr">Vice-président finances chez Wolftec Inc. · Plus de 20 ans d'expérience comme CPA en environnement corporatif · Plus de 20 ans en automatisation comptable et en intégration technologique pour PME québécoises.</span>
-                  <span data-lang="en">VP Finance at Wolftec Inc. · 20+ years of CPA experience in corporate finance · 20+ years in accounting automation and technology integration for Quebec SMBs.</span>
-                </p>
-                <ul class="profil-points">
-                  <li>
-                    <span data-lang="fr">Direction financière d'une entreprise manufacturière de plus de 50 employés</span>
-                    <span data-lang="en">Finance leadership for a manufacturing company with 50+ employees</span>
-                  </li>
-                  <li>
-                    <span data-lang="fr">Implantations Dext, QuickBooks, KNIME et automatisation des flux comptables</span>
-                    <span data-lang="en">Dext, QuickBooks, KNIME deployments and accounting workflow automation</span>
-                  </li>
-                  <li>
-                    <span data-lang="fr">Membre en règle de l'Ordre des CPA du Québec</span>
-                    <span data-lang="en">Member in good standing of the Ordre des CPA du Québec</span>
-                  </li>
-                </ul>
-                <a href="https://www.linkedin.com/in/affaire-de-chiffres-b327ab3b7/" target="_blank" rel="noopener noreferrer" class="profil-linkedin" aria-label="LinkedIn de Luc Pilon">
-                  <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                  </svg>
-                  LinkedIn
-                </a>
-              </div>
-            </article>
-
-          </div><!-- /.equipe-grille -->
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Section Contact — fond charbon -->
-    <section id="contact" class="section section-contact" aria-label="Contact">
-      <div class="section-contenu contact-contenu">
-
-        <!-- En-tête de section -->
-        <span class="eyebrow scroll-reveal">
-          <span data-lang="fr">Contact</span>
-          <span data-lang="en">Contact</span>
-        </span>
-        <h2 class="scroll-reveal">
-          <span data-lang="fr">Parlons-nous. Trente minutes, c'est souvent tout ce qu'il faut.</span>
-          <span data-lang="en">Let's talk. Thirty minutes is often all it takes.</span>
-        </h2>
-        <p class="contact-sous-titre scroll-reveal">
-          <span data-lang="fr">Prenez rendez-vous ou demandez un estimé gratuit.</span>
-          <span data-lang="en">Book a consultation or request a free estimate.</span>
-        </p>
-
-        <!-- Layout deux colonnes : infos + formulaire -->
-        <div class="contact-grille">
-
-          <!-- ============================================
-               COLONNE GAUCHE — Informations de contact
-               ============================================ -->
-          <div class="contact-infos scroll-reveal">
-            <h3 class="contact-infos-titre">
-              <span data-lang="fr">Coordonnées</span>
-              <span data-lang="en">Contact information</span>
-            </h3>
-
-            <ul class="contact-liste">
-              <li>
-                <span class="contact-icone" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                </span>
-                <a href="mailto:conseils@affairedechiffres.com" class="contact-lien">conseils@affairedechiffres.com</a>
-              </li>
-              <li>
-                <span class="contact-icone" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                </span>
-                <span>
-                  <span data-lang="fr">Montréal et Montérégie</span>
-                  <span data-lang="en">Montréal and Montérégie</span>
-                </span>
-              </li>
-              <li>
-                <span class="contact-icone" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                </span>
-                <span>
-                  <span data-lang="fr">Lun – Ven, 9 h – 17 h (heure de l'Est)</span>
-                  <span data-lang="en">Mon – Fri, 9 am – 5 pm (Eastern Time)</span>
-                </span>
-              </li>
+        <div class="adc-apropos__texte">
+          <p class="adc-eyebrow scroll-reveal"><span class="adc-eyebrow__num" aria-hidden="true">05</span><span data-lang="fr">À propos</span><span data-lang="en">About</span></p>
+          <h2 class="scroll-reveal"><span data-lang="fr">Un cabinet familial, <em>dirigé par un CPA, CA.</em></span><span data-lang="en">A family firm, <em>led by a CPA, CA.</em></span></h2>
+          <p class="adc-apropos__approche scroll-reveal"><span data-lang="fr">Chez Affaire de Chiffres, nous croyons que la comptabilité moderne repose sur l'intégration judicieuse des technologies émergentes. En exploitant des outils tels que Dext, KNIME et d'autres solutions d'automatisation, nous simplifions les processus comptables de nos clients pour qu'ils puissent se concentrer sur la croissance de leur entreprise. Depuis 2017, nous combinons rigueur professionnelle et innovation technologique au service des particuliers et des entreprises de Montréal et de la Montérégie.</span><span data-lang="en">At Affaire de Chiffres, we believe that modern accounting relies on the smart integration of emerging technologies. By leveraging tools such as Dext, KNIME and other automation solutions, we simplify our clients' accounting processes so they can focus on growing their business. Since 2017, we have been combining professional rigour and technological innovation to serve individuals and businesses in Montréal and the Montérégie region.</span></p>
+          <div class="adc-profil scroll-reveal">
+            <h3 class="adc-profil__nom">Luc Pilon, CPA, CA</h3>
+            <p class="adc-profil__role"><span data-lang="fr">Fondateur</span><span data-lang="en">Founder</span></p>
+            <p class="adc-profil__bio"><span data-lang="fr">Vice-président finances chez Wolftec Inc. · Plus de 20 ans d'expérience comme CPA en environnement corporatif · Plus de 20 ans en automatisation comptable et en intégration technologique pour PME québécoises.</span><span data-lang="en">VP Finance at Wolftec Inc. · 20+ years of CPA experience in corporate finance · 20+ years in accounting automation and technology integration for Quebec SMBs.</span></p>
+            <ul class="adc-checks">
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Direction financière d'une entreprise manufacturière de plus de 50 employés</span><span data-lang="en">Finance leadership for a manufacturing company with 50+ employees</span></span></li>
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Implantations Dext, QuickBooks, KNIME et automatisation des flux comptables</span><span data-lang="en">Dext, QuickBooks, KNIME deployments and accounting workflow automation</span></span></li>
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Membre en règle de l'Ordre des CPA du Québec</span><span data-lang="en">Member in good standing of the Ordre des CPA du Québec</span></span></li>
             </ul>
-
-            <p class="contact-note">
-              <span data-lang="fr"><strong>Engagement de réponse en 24 h ouvrables.</strong></span>
-              <span data-lang="en"><strong>24-business-hour response commitment.</strong></span>
-            </p>
-
-          </div>
-
-          <!-- ============================================
-               COLONNE DROITE — CTA de réservation Microsoft Bookings
-               ============================================ -->
-          <div class="contact-booking-card scroll-reveal">
-            <h3 class="contact-booking-titre">
-              <span data-lang="fr">Réservez un appel-vidéo</span>
-              <span data-lang="en">Book a video call</span>
-            </h3>
-            <p class="contact-booking-desc">
-              <span data-lang="fr">30 minutes sans frais avec notre équipe CPA. Sans engagement. Choisissez votre créneau directement dans notre calendrier.</span>
-              <span data-lang="en">30 minutes at no charge with our CPA team. No commitment. Pick a time directly in our calendar.</span>
-            </p>
-            <ul class="contact-booking-liste">
-              <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span data-lang="fr">Analyse de votre situation actuelle</span>
-                <span data-lang="en">Review of your current situation</span>
-              </li>
-              <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span data-lang="fr">Estimé sur mesure en 24 h</span>
-                <span data-lang="en">Tailored estimate within 24h</span>
-              </li>
-              <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span data-lang="fr">Aucune présentation commerciale</span>
-                <span data-lang="en">No sales pitch</span>
-              </li>
-            </ul>
-            <a href="https://outlook.office.com/book/ConsultationGratuite30Minutes@affairedechiffres.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="btn btn-primaire btn-booking" data-event="contact_booking_click">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-              <span data-lang="fr">Ouvrir le calendrier</span>
-              <span data-lang="en">Open the calendar</span>
+            <a href="https://www.linkedin.com/in/affaire-de-chiffres-b327ab3b7/" target="_blank" rel="noopener noreferrer" class="adc-profil__linkedin" aria-label="LinkedIn de Luc Pilon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.570c0-1.330-.020-3.040-1.850-3.040-1.850 0-2.140 1.450-2.140 2.940v5.670H9.350V9h3.410v1.560h.050c.480-.900 1.640-1.850 3.370-1.850 3.600 0 4.270 2.370 4.270 5.460v6.280zM5.340 7.430a2.060 2.060 0 1 1 0-4.120 2.060 2.060 0 0 1 0 4.120zM7.120 20.450H3.560V9h3.560v11.450z"/></svg>
+              LinkedIn
             </a>
-            <p class="contact-booking-fallback">
-              <span data-lang="fr">Vous préférez écrire ? <a href="mailto:conseils@affairedechiffres.com">Envoyez-nous un courriel</a>.</span>
-              <span data-lang="en">Prefer to write? <a href="mailto:conseils@affairedechiffres.com">Send us an email</a>.</span>
-            </p>
           </div>
+        </div>
+      </div>
+    </section>
 
-        </div><!-- /.contact-grille -->
-
+    <!-- ============================================
+         CONTACT — CTA final unique (Microsoft Bookings)
+         ============================================ -->
+    <section id="contact" class="adc-sec adc-contact" aria-label="Contact">
+      <div class="adc-wrap adc-contact__grille">
+        <div class="adc-contact__texte">
+          <p class="adc-eyebrow scroll-reveal"><span class="adc-eyebrow__num" aria-hidden="true">06</span><span data-lang="fr">Contact</span><span data-lang="en">Contact</span></p>
+          <h2 class="scroll-reveal"><span data-lang="fr">Parlons-nous. <em>Trente minutes, c'est souvent tout ce qu'il faut.</em></span><span data-lang="en">Let's talk. <em>Thirty minutes is often all it takes.</em></span></h2>
+          <ul class="adc-contact__coord scroll-reveal">
+            <li><span><span data-lang="fr">Courriel</span><span data-lang="en">Email</span></span><a href="mailto:conseils@affairedechiffres.com">conseils@affairedechiffres.com</a></li>
+            <li><span><span data-lang="fr">Région</span><span data-lang="en">Region</span></span><span data-lang="fr">Montréal et Montérégie</span><span data-lang="en">Montréal and Montérégie</span></li>
+            <li><span><span data-lang="fr">Heures</span><span data-lang="en">Hours</span></span><span data-lang="fr">Lun – Ven, 9&nbsp;h – 17&nbsp;h (heure de l'Est)</span><span data-lang="en">Mon – Fri, 9 am – 5 pm (Eastern Time)</span></li>
+          </ul>
+        </div>
+        <div class="adc-rdv scroll-reveal">
+          <h3><span data-lang="fr">Réservez un appel-vidéo</span><span data-lang="en">Book a video call</span></h3>
+          <p><span data-lang="fr">30 minutes sans frais avec notre équipe CPA. Sans engagement. Choisissez votre créneau directement dans notre calendrier.</span><span data-lang="en">30 minutes at no charge with our CPA team. No commitment. Pick a time directly in our calendar.</span></p>
+          <ul class="adc-checks">
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Analyse de votre situation actuelle</span><span data-lang="en">Review of your current situation</span></span></li>
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Estimé sur mesure en 24&nbsp;h</span><span data-lang="en">Tailored estimate within 24h</span></span></li>
+              <li><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg><span><span data-lang="fr">Aucune présentation commerciale</span><span data-lang="en">No sales pitch</span></span></li>
+          </ul>
+          <a href="https://outlook.office.com/book/ConsultationGratuite30Minutes@affairedechiffres.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="adc-btn adc-btn--large" data-event="contact_booking_click"><span data-lang="fr">Réserver un appel de 30 minutes</span><span data-lang="en">Book a 30-minute call</span><svg class="adc-btn__arrow" viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg></a>
+          <p class="adc-rdv__alt"><span data-lang="fr">Vous préférez écrire&nbsp;? <a href="mailto:conseils@affairedechiffres.com">Envoyez-nous un courriel</a>.</span><span data-lang="en">Prefer to write? <a href="mailto:conseils@affairedechiffres.com">Send us an email</a>.</span></p>
+        </div>
       </div>
     </section>
 
@@ -1105,14 +529,14 @@
        ============================================ -->
   <div class="sticky-cta" id="sticky-cta" aria-hidden="true">
     <div class="sticky-cta-texte">
-      <strong data-lang="fr">Prêt à reprendre le contrôle de vos chiffres&nbsp;?</strong>
-      <strong data-lang="en">Ready to take back control of your numbers?</strong>
-      <span data-lang="fr">Programmez un appel-vidéo avec notre équipe</span>
-      <span data-lang="en">Schedule a video call with our team</span>
+      <strong data-lang="fr">Un appel de 30 minutes, sans frais</strong>
+      <strong data-lang="en">A 30-minute call, at no charge</strong>
+      <span data-lang="fr">Avec notre équipe CPA · sans engagement</span>
+      <span data-lang="en">With our CPA team · no commitment</span>
     </div>
-    <a href="https://outlook.office.com/book/ConsultationGratuite30Minutes@affairedechiffres.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="btn btn-primaire sticky-cta-btn">
-      <span data-lang="fr">Réserver maintenant</span>
-      <span data-lang="en">Book now</span>
+    <a href="https://outlook.office.com/book/ConsultationGratuite30Minutes@affairedechiffres.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="btn btn-primaire sticky-cta-btn" data-event="sticky_cta_click">
+      <span data-lang="fr">Réserver un appel</span>
+      <span data-lang="en">Book a call</span>
     </a>
   </div>
 
