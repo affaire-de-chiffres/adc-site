@@ -1,0 +1,413 @@
+/* ================================================================
+   PAGES.CSS — Sous-pages alignées sur le design v3 de l'accueil
+   ----------------------------------------------------------------
+   Chargé par faq.html, articles.html, forfait-complet.html et
+   devenir-affilie.html, APRÈS styles.css, home.css (jetons --adc-*,
+   navigation, pied de page) et le <style> propre à chaque page.
+   Ne change que l'habillage : aucune structure, aucun contenu.
+   ================================================================ */
+
+/* ---------- En-têtes de page (hero) : papier + trame « grand livre » ---------- */
+.subpage-hero,
+.articles-hero,
+.lp-hero,
+.aff-hero {
+  position: relative;
+  overflow: hidden;
+  color: var(--adc-encre-2);
+  background:
+    radial-gradient(820px 420px at 50% 0%, rgba(232, 148, 58, 0.13), transparent 66%),
+    var(--adc-papier);
+  padding-top: calc(var(--hauteur-nav) + clamp(48px, 7vw, 88px));
+  padding-bottom: clamp(44px, 6vw, 76px);
+}
+.subpage-hero::before,
+.articles-hero::before,
+.lp-hero::before,
+.aff-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  transform: none;
+  background: linear-gradient(to right, rgba(21, 20, 15, 0.045) 1px, transparent 1px);
+  background-size: clamp(72px, 9vw, 118px) 100%;
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, transparent 88%);
+          mask-image: linear-gradient(to bottom, #000 0%, transparent 88%);
+  pointer-events: none;
+}
+.articles-hero > * { position: relative; z-index: 1; }
+
+.subpage-hero h1,
+.articles-hero h1,
+.lp-hero h1,
+.aff-hero h1 {
+  font-family: var(--adc-serif);
+  font-weight: 400;
+  font-size: clamp(2.3rem, 5.4vw, 3.9rem);
+  line-height: 1.06;
+  letter-spacing: -0.022em;
+  color: var(--adc-encre);
+  text-wrap: balance;
+}
+.lp-hero h1 .lp-accent,
+.aff-hero h1 .lp-accent {
+  display: block;
+  font-style: italic;
+  color: var(--adc-ambre-texte);
+}
+.subpage-hero .subpage-sous-titre,
+.articles-hero-desc,
+.lp-hero .lp-subtitle,
+.aff-hero .aff-subtitle {
+  color: var(--adc-encre-2);
+  font-size: clamp(1.02rem, 1.4vw, 1.14rem);
+  line-height: 1.62;
+  letter-spacing: 0;
+}
+
+/* Repère au-dessus du titre : libellé mono + point ambre (comme l'accueil) */
+.subpage-hero .eyebrow,
+.lp-hero .eyebrow,
+.aff-hero .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  font-family: var(--adc-mono);
+  font-size: 0.74rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--adc-encre-3);
+}
+.subpage-hero .eyebrow::before,
+.lp-hero .eyebrow::before,
+.aff-hero .eyebrow::before {
+  width: 7px;
+  height: 7px;
+  background: var(--adc-ambre);
+  box-shadow: 0 0 0 4px rgba(232, 148, 58, 0.18);
+}
+
+/* ---------- Bouton principal : même traitement que .adc-btn ---------- */
+.btn.btn-primaire,
+.lp-hero .btn-primaire,
+.aff-hero .btn-primaire,
+.lp-cta-banner .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 14px 26px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--adc-ambre);
+  color: var(--adc-encre);
+  font-family: var(--adc-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  text-decoration: none;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35) inset, 0 10px 24px -12px rgba(154, 79, 7, 0.65);
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn.btn-primaire:hover,
+.lp-hero .btn-primaire:hover,
+.aff-hero .btn-primaire:hover,
+.lp-cta-banner .btn:hover {
+  background: var(--adc-ambre-vif);
+  color: var(--adc-encre);
+  transform: translateY(-1px);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35) inset, 0 16px 30px -14px rgba(154, 79, 7, 0.75);
+}
+.btn.btn-primaire:focus-visible,
+.lp-cta-banner .btn:focus-visible { outline: 3px solid var(--adc-encre); outline-offset: 3px; }
+.lp-cta-banner .btn:focus-visible,
+.subpage-cta-bas .btn:focus-visible { outline-color: var(--adc-papier); }
+
+/* ---------- Titres de section ---------- */
+.lp-details h2,
+.lp-garanties h2,
+.lp-contact h2,
+.lp-cta-banner h2,
+.aff-how h2,
+.aff-benefits h2,
+.aff-apply h2 {
+  font-family: var(--adc-serif);
+  font-weight: 400;
+  font-size: clamp(1.9rem, 3.8vw, 2.8rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+.lp-details h2,
+.lp-contact h2,
+.aff-how h2,
+.aff-apply h2 { color: var(--adc-encre); }
+.lp-garanties h2,
+.aff-benefits h2 { color: var(--adc-papier); }
+
+/* ---------- Fonds de section ---------- */
+.lp-details,
+.aff-how,
+.section-faq,
+.articles-section { background: var(--adc-papier); }
+.lp-contact,
+.aff-apply { background: var(--adc-papier-2); }
+.lp-social-proof,
+.lp-garanties,
+.aff-benefits { background-color: var(--adc-encre); }
+
+/* ---------- Cartes claires ---------- */
+.lp-feature-item,
+.aff-step,
+.lp-prebooking-card,
+.aff-form-card {
+  background: var(--adc-blanc);
+  border: 1px solid var(--adc-ligne);
+  border-radius: var(--adc-rayon-lg);
+  box-shadow: none;
+}
+.lp-feature-item { padding: 24px; }
+.lp-feature-item:hover,
+.aff-step:hover { border-color: var(--adc-ligne-forte); box-shadow: 0 14px 30px -22px rgba(21, 20, 15, 0.35); }
+.lp-feature-item h4 { color: var(--adc-encre); letter-spacing: -0.01em; }
+.lp-feature-item p,
+.aff-step p,
+.lp-prebooking-card p,
+.aff-apply-subtitle { color: var(--adc-encre-3); letter-spacing: 0; }
+.lp-feature-icon {
+  background: rgba(232, 148, 58, 0.16);
+  color: var(--adc-ambre-texte);
+  border-radius: 10px;
+}
+.lp-details-inner > p,
+.lp-details-inner .scroll-reveal > p { letter-spacing: 0; }
+
+/* ---------- Cartes sombres ---------- */
+.lp-garantie-card,
+.aff-benefit {
+  border-radius: var(--adc-rayon);
+  border-color: var(--adc-nuit-ligne);
+}
+.lp-garantie-card .garantie-numero {
+  font-family: var(--adc-mono);
+  font-weight: 500;
+  font-size: 0.76rem;
+  letter-spacing: 0.06em;
+  color: var(--adc-ambre-vif);
+}
+.lp-garantie-card h3,
+.aff-benefit h3 { color: var(--adc-papier); letter-spacing: -0.01em; }
+.lp-garantie-card p,
+.aff-benefit p { color: var(--adc-nuit-texte); letter-spacing: 0; }
+.aff-benefit-icon { border-radius: 10px; }
+
+/* ================================================================
+   FORFAIT COMPLET
+   ================================================================ */
+.lp-trust-pill {
+  background: var(--adc-blanc);
+  border-color: var(--adc-ligne);
+  color: var(--adc-encre-2);
+  font-size: 0.8rem;
+}
+.lp-trust-pill svg { color: var(--adc-ambre-texte); }
+.lp-stats-bar { border-top-color: var(--adc-ligne); }
+.lp-stat-number {
+  font-family: var(--adc-serif);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: var(--adc-encre);
+}
+.lp-stat-label { color: var(--adc-encre-3); font-size: 0.8rem; }
+.lp-social-proof .outils-surtitre,
+.lp-social-proof .hero-outils-wall .outils-surtitre {
+  font-family: var(--adc-mono);
+  font-weight: 500;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: rgba(247, 243, 235, 0.55);
+}
+
+/* Carte du forfait : même carte « encre » que sur l'accueil */
+.lp-forfait-center .carte-forfait-vedette {
+  background: var(--adc-encre);
+  border: 1px solid var(--adc-encre);
+  border-radius: var(--adc-rayon-lg);
+  color: var(--adc-nuit-texte);
+  box-shadow: 0 30px 60px -36px rgba(21, 20, 15, 0.6);
+}
+.lp-forfait-center .carte-forfait-vedette:hover { transform: none; box-shadow: 0 30px 60px -36px rgba(21, 20, 15, 0.6); }
+.lp-forfait-center .forfait-badge {
+  top: 22px;
+  left: auto;
+  right: 20px;
+  transform: none;
+  padding: 4px 10px;
+  font-family: var(--adc-mono);
+  font-size: 0.64rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  background: var(--adc-ambre);
+  color: var(--adc-encre);
+}
+.lp-forfait-center .forfait-entete { border-bottom: 1px solid var(--adc-nuit-ligne); padding-bottom: 20px; margin-bottom: 20px; }
+.lp-forfait-center .forfait-nom {
+  font-family: var(--adc-mono);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--adc-ambre-vif);
+  margin-bottom: 14px;
+}
+.lp-forfait-center .forfait-prix {
+  font-family: var(--adc-serif);
+  font-weight: 400;
+  font-size: 1.9rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--adc-papier);
+}
+.lp-forfait-center .forfait-prix-suffixe { font-family: var(--adc-sans); font-size: 0.85rem; letter-spacing: 0; color: rgba(247, 243, 235, 0.6); }
+.lp-forfait-center .forfait-prix-detail { font-style: normal; color: rgba(247, 243, 235, 0.6); margin-top: 8px; }
+.lp-forfait-center .forfait-liste li { color: var(--adc-nuit-texte); }
+.lp-forfait-center .forfait-liste li::before { background-color: var(--adc-ambre); width: 6px; height: 6px; top: 9px; }
+.lp-forfait-center .btn { width: 100%; }
+.lp-forfait-center > p,
+.lp-forfait-center .lp-forfait-note { color: var(--adc-encre-3); }
+
+/* Bandeau CTA : prolonge la section sombre au lieu d'un aplat orange */
+.lp-cta-banner {
+  background: var(--adc-encre);
+  background-image: radial-gradient(700px 300px at 50% 100%, rgba(232, 148, 58, 0.18), transparent 65%);
+  border-top: 1px solid var(--adc-nuit-ligne);
+  color: var(--adc-nuit-texte);
+}
+.lp-cta-banner h2 { color: var(--adc-papier); margin-bottom: 12px; }
+.lp-cta-banner p { color: var(--adc-nuit-texte); opacity: 1; }
+
+.lp-prebooking-card { padding: 40px 32px; box-shadow: 0 30px 60px -40px rgba(21, 20, 15, 0.45); }
+.lp-prebooking-card h3 {
+  font-family: var(--adc-serif);
+  font-weight: 400;
+  font-size: 1.6rem;
+  letter-spacing: -0.015em;
+  color: var(--adc-encre);
+}
+.lp-prebooking-fallback { color: var(--adc-encre-3); }
+.lp-prebooking-fallback a,
+.aff-apply-email a { color: var(--adc-encre); border-bottom-color: var(--adc-ligne-forte); }
+.lp-prebooking-fallback a:hover,
+.aff-apply-email a:hover { color: var(--adc-ambre-texte); }
+
+/* ================================================================
+   DEVENIR AFFILIÉ
+   ================================================================ */
+.aff-step { text-align: left; padding: 30px 26px; }
+.aff-step-number {
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  background: none;
+  justify-content: flex-start;
+  font-family: var(--adc-mono);
+  font-size: 0.76rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--adc-ambre-texte);
+  margin-bottom: 22px;
+}
+.aff-step-number::before { content: "0"; }
+.aff-step h3 {
+  font-family: var(--adc-serif);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  color: var(--adc-encre);
+  margin-bottom: 10px;
+}
+.aff-step:not(:last-child)::after { display: none; }
+.aff-apply-info { background: var(--adc-papier); border-radius: var(--adc-rayon); color: var(--adc-encre-3); }
+.aff-apply-email { color: var(--adc-encre-3); }
+.aff-form-card .btn { width: 100%; }
+
+/* ================================================================
+   FAQ
+   ================================================================ */
+.section-faq { min-height: 0; padding-top: clamp(28px, 4vw, 48px); padding-bottom: clamp(64px, 8vw, 104px); }
+.section-faq .faq-liste { gap: 0; border-top: 1px solid var(--adc-ligne-forte); }
+.section-faq .faq-item { border: 0; border-bottom: 1px solid var(--adc-ligne); }
+.section-faq .faq-item:hover,
+.section-faq .faq-item[open] { box-shadow: none; }
+.section-faq .faq-question {
+  font-family: var(--adc-serif);
+  font-weight: 400;
+  font-size: clamp(1.15rem, 1.8vw, 1.32rem);
+  letter-spacing: -0.012em;
+  line-height: 1.3;
+  color: var(--adc-encre);
+  padding: 24px 44px 24px 0;
+}
+.section-faq .faq-question:hover { color: var(--adc-ambre-texte); }
+.section-faq .faq-question:focus-visible { outline: 3px solid var(--adc-encre); outline-offset: 2px; }
+.section-faq .faq-reponse { color: var(--adc-encre-2); font-size: 0.98rem; line-height: 1.68; max-width: 720px; }
+.section-faq .faq-reponse p { letter-spacing: 0; }
+.subpage-cta-bas {
+  background: var(--adc-encre);
+  background-image: radial-gradient(520px 240px at 50% 0%, rgba(232, 148, 58, 0.18), transparent 65%);
+  border-radius: var(--adc-rayon-lg);
+  padding: clamp(32px, 5vw, 52px) 28px;
+}
+.subpage-cta-bas p {
+  font-family: var(--adc-serif);
+  font-weight: 400;
+  font-style: italic;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  letter-spacing: -0.015em;
+  color: var(--adc-papier);
+  margin-bottom: 24px;
+}
+
+/* ================================================================
+   ARTICLES
+   ================================================================ */
+.articles-section { padding-top: clamp(32px, 4vw, 48px); }
+.articles-filtre-btn {
+  min-height: 40px;
+  border: 1px solid var(--adc-ligne-forte);
+  border-radius: 10px;
+  background: var(--adc-blanc);
+  color: var(--adc-encre-2);
+  font-family: var(--adc-mono);
+  font-size: 0.76rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.articles-filtre-btn:hover { border-color: var(--adc-encre); color: var(--adc-encre); }
+.articles-filtre-btn.actif { background: var(--adc-encre); border-color: var(--adc-encre); color: var(--adc-papier); }
+.articles-filtre-btn:focus-visible { outline: 3px solid var(--adc-encre); outline-offset: 2px; }
+.articles-vide { color: var(--adc-encre-3); }
+.articles-vide svg { color: var(--adc-ambre); }
+.articles-vide p { font-family: var(--adc-serif); font-size: 1.3rem; color: var(--adc-encre); letter-spacing: -0.01em; }
+
+@media (prefers-reduced-motion: reduce) {
+  .btn.btn-primaire, .lp-cta-banner .btn { transition: none; }
+  .btn.btn-primaire:hover, .lp-cta-banner .btn:hover { transform: none; }
+}
+
+/* Sélecteur de langue : FAQ et Articles posent la classe « active » (sans style jusqu'ici → boutons invisibles) */
+.nav-langue .btn-langue { color: var(--adc-papier); opacity: 0.6; cursor: pointer; }
+.nav-langue .btn-langue:hover { opacity: 1; }
+.nav-langue .btn-langue.active,
+.nav-langue .btn-langue.btn-langue-active { color: var(--adc-ambre); opacity: 1; cursor: default; }
